@@ -1,5 +1,5 @@
 ## Course Title: Interactive Media 1 - Course Code: OART1013
-<p align="left">Assignment 1</p>
+<p align="left">Assignment 1 ~ Interactive Experience Research Project</p>
 
 
 ## Author 
