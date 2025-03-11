@@ -3,8 +3,8 @@
 
 
 ## Author 
-<p align="left">Evanthia (Eva) Evgenidis</p>
+<p align="left">🌸 Evanthia (Eva) Evgenidis</p>
 
 
 ## Attributions
-<p align="left"> Copyright © Eva Evgenidis | 2025 <span id="datee"></span> </p>
+<p align="left"> Copyright © Eva Evgenidis | 2025 | All rights reserved <span id="datee"></span> </p>
