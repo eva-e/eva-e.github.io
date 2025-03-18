@@ -1,48 +1,8 @@
-@import url();
-* {
-  color: rgb(150, 235, 150);
-}
-body {
-  background-color: rgb(255, 243, 227);
-}
+/* =========================
+1. Chose Bebaus Nue for h1 as it has a domineering font style, displaying the first header explicitly
 
-li {
-  color: rgb(148, 122, 105);
-}
 
-h1 {
-  color: rgb(255, 132, 167);
-  font-weight: 800;
-}
-
-h2 {
-  color: rgb(150, 235, 150);
-  font-weight: 600;
-}
-
-h3 {
-  color: rgb(150, 235, 150);
-}
-
-p {
-  color: rgb(148, 122, 105);
-  font-weight: 100;
-}
-
-/* class has dot . */
-/* for h2 */
-.pink-color {
-  color: rgb(255, 162, 198);
-}
-/* for link li */
-.hotpink-color {
-  color: rgb(255, 32, 125);
-}
-
-/* for second p */
-#second-para {
-  color: rgb(87, 71, 51);
-}
+========================*/
 
 /* div - what html to be styled - {} group declarations for a selector */
 /* property - what aspects of design to adjust eg.font-weight */
@@ -54,3 +14,73 @@ p {
 /* colon : */
 /* semicolon ; */
 /* syntax - rules of writing */
+/* Pixel: px */
+/* REM: rem */
+/* Percentage: % */
+/* Viewport units: vw, h */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+
+* {
+  color: rgb(150, 235, 150);
+}
+
+body {
+  background-color: rgb(255, 243, 227);
+  font-size: 0.9rem;
+}
+
+li {
+  color: rgb(148, 122, 105);
+  font-family: "Kanit";
+}
+
+h1 {
+  color: rgb(255, 132, 167);
+  font-weight: 800;
+  font-size: 1.8rem;
+  font-family: "Bebas Neue";
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  border-style: solid;
+}
+
+h2 {
+  color: rgb(150, 235, 150);
+  font-weight: 500;
+  font-family: "Poppins";
+  font-style: italic;
+}
+
+h3 {
+  color: rgb(150, 235, 150);
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+p {
+  color: rgb(148, 122, 105);
+  font-weight: 300;
+  font-family: "Kanit";
+}
+
+/* class has dot . */
+
+/* Classes */
+/* for h2 */
+.pink-color {
+  color: rgb(255, 158, 186);
+}
+
+/* for link li */
+.hotpink-color {
+  color: rgb(255, 158, 186);
+}
+
+/* for second p */
+#second-para {
+  color: rgb(255, 158, 186);
+}

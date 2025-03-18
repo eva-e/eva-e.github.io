@@ -1,0 +1,56 @@
+@import url();
+* {
+  color: rgb(150, 235, 150);
+}
+body {
+  background-color: rgb(255, 243, 227);
+}
+
+li {
+  color: rgb(148, 122, 105);
+}
+
+h1 {
+  color: rgb(255, 132, 167);
+  font-weight: 800;
+}
+
+h2 {
+  color: rgb(150, 235, 150);
+  font-weight: 600;
+}
+
+h3 {
+  color: rgb(150, 235, 150);
+}
+
+p {
+  color: rgb(148, 122, 105);
+  font-weight: 100;
+}
+
+/* class has dot . */
+/* for h2 */
+.pink-color {
+  color: rgb(255, 162, 198);
+}
+/* for link li */
+.hotpink-color {
+  color: rgb(255, 32, 125);
+}
+
+/* for second p */
+#second-para {
+  color: rgb(87, 71, 51);
+}
+
+/* div - what html to be styled - {} group declarations for a selector */
+/* property - what aspects of design to adjust eg.font-weight */
+/*  */
+/* curly braces {} */
+/* square brackets [] */
+/* parentheses <> */
+/* round brackets () */
+/* colon : */
+/* semicolon ; */
+/* syntax - rules of writing */
