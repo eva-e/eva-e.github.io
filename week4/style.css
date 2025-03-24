@@ -1,16 +1,35 @@
 body {
+  /* "rem" only for fonts */
   font-size: 1.2rem;
   text-align: center;
   background-color: rgb(255, 243, 227);
 }
 
 h1 {
+  font-family: "Poppins";
   color: rgb(150, 235, 150);
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 p {
+  /* spacing in "px" */
   border: 1px solid rgb(214, 179, 155);
   color: #ff91b5;
+  width: 400px;
+  min-height: 100px;
+  /*  "margin" horizontal centering */
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  /* top, right, bottom, left */
+  /* padding: 20px 30px 20px 30px; */
+  padding: 20px;
+  margin-bottom: 20px;
 }
+
+/* padding is the gap/distance between the content and the border */
+/* margin is te gap/distance between the borders */
