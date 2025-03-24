@@ -1,0 +1,16 @@
+body {
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: rgb(255, 243, 227);
+}
+
+h1 {
+  color: rgb(150, 235, 150);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+p {
+  border: 1px solid rgb(214, 179, 155);
+  color: #ff91b5;
+}
