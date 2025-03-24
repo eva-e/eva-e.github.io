@@ -3,6 +3,7 @@ body {
   font-size: 1.2rem;
   text-align: center;
   background-color: rgb(255, 243, 227);
+  margin: 0 auto;
 }
 
 h1 {
@@ -18,17 +19,31 @@ h1 {
 p {
   /* spacing in "px" */
   border: 1px solid rgb(214, 179, 155);
+  border-bottom: 3px dashed rgb(150, 235, 150);
   color: #ff91b5;
   width: 400px;
-  min-height: 100px;
-  /*  "margin" horizontal centering */
+  height: 300px;
+  margin-left: 30px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  /* top, right, bottom, left */
-  /* padding: 20px 30px 20px 30px; */
   padding: 20px;
   margin-bottom: 20px;
+  /* "margin" horizontal centering */
+  /* padding-left: 20px; */
+  /* padding-bottom: 30px;  */
+  /* top, right, bottom, left */
+  /* padding: 20px 30px 20px 30px; */
+}
+
+.vcenter {
+  line-height: 260px;
+  /* height 300 padding 20 = 300-20-20 */
+}
+
+/* h1 Box Model */
+span {
+  color: #ff91b6a9;
+  /* display: block; */
+  /* display: inline; */
 }
 
 /* padding is the gap/distance between the content and the border */
