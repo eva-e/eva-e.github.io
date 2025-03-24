@@ -33,7 +33,8 @@ body {
 }
 
 li {
-  color: rgb(148, 122, 105);
+  /* color: rgb(148, 122, 105); */
+  color: rgb(214, 179, 155);
   font-family: "Kanit";
 }
 
