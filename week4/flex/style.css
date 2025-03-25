@@ -1,0 +1,50 @@
+body {
+  background-color: #866c5b;
+  margin: auto;
+  max-width: 1000px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #e5e5cb;
+  font-size: 1.1rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer {
+  width: 400px;
+  border: 2px dashed #e5e5cb56;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.mintbox {
+  background-color: #8cfa9e;
+  color: #3c2a21;
+  padding: 10px;
+}
+
+.coralpinkbox {
+  background-color: #ff91b5;
+  color: #3c2a21;
+  padding: 10px;
+}
+
+.creambox {
+  background-color: rgb(255, 227, 200);
+  color: #3c2a21;
+  padding: 10px;
+}
+
+/* make equal column widths */
+.outer > * {
+  flex: 1;
+}
