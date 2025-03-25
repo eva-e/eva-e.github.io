@@ -46,5 +46,14 @@ span {
   /* display: inline; */
 }
 
+ul {
+  color: #ff91b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-direction: column;
+}
+
 /* padding is the gap/distance between the content and the border */
 /* margin is te gap/distance between the borders */
