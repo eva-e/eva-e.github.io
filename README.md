@@ -1,7 +1,7 @@
 ## Course Title: Interactive Media 1 - Course Code: OART1013
 <p align="left">Assignment 1 ~ Interactive Experience Research Project</p>
-<p align="left">https://eva-e.github.io/assignment3</p>
-<p align="left">https://eva-e.github.io/assignment4</p>
+<p align="left">https://eva-e.github.io/week3</p>
+<p align="left">https://eva-e.github.io/week4</p>
 
 ## Author 
 <p align="left">🌸 Evanthia (Eva) Evgenidis</p>
