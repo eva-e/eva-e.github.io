@@ -19,7 +19,7 @@ body {
   border: 2px dashed #e5e5cb56;
   width: 500px;
   min-height: 500px;
-  padding: 10px;
+  padding: 7px;
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
