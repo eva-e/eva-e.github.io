@@ -9,9 +9,9 @@ let myCity = "Perth";
 // number variables
 let num = 10;
 
-const weather = "sunny";
+const weather = "rainy and cloudy";
 const msg = `<h1>Today's weather is ${weather}
-<p> this is so nice to see the sun again</p></h1>`;
+<p> it is so nice to hear the sound of rain</p></h1>`;
 console.log(msg);
 
 // boolean variable true - false
