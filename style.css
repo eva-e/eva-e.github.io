@@ -9,7 +9,14 @@
   color: rgb(150, 235, 150);
 } */
 body {
+  margin: 0 auto;
   background-color: #fff1e6;
+  min-height: 100vh;
+}
+
+.banner {
+  padding: 30px;
+  background: #766257;
 }
 
 li {
@@ -17,9 +24,12 @@ li {
 }
 
 h1 {
+  margin-left: 30%;
+  text-align: left;
   color: #766257;
   font-weight: 700;
   font-family: "Poppins";
+  text-align: justify;
 }
 
 h2 {
@@ -28,13 +38,27 @@ h2 {
 }
 
 h3 {
+  font-family: "Poppins";
+  text-align: left;
   color: rgb(150, 235, 150);
+  padding: 20px;
+  font-size: 15px;
+  max-width: 800px;
+  margin-top: 10px;
+  margin-left: 19%;
+  margin-bottom: 20px;
 }
 
 p {
-  color: rgb(148, 122, 105);
+  color: rgb(87, 71, 51);
   font-weight: 300;
   font-family: "Poppins";
+  padding: 20px;
+  font-size: 15px;
+  max-width: 800px;
+  margin-top: 10px;
+  margin-left: 19%;
+  margin-bottom: 20px;
 }
 
 /* class has dot . */
@@ -47,48 +71,17 @@ p {
   color: rgb(255, 32, 125);
 }
 
-/* for second p */
-#second-para {
-  color: rgb(87, 71, 51);
-}
 /* QUESTION LINKS TOP OF PAGE */
-#question-1 {
+.reference-links {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 300;
+  word-spacing: 35px;
 }
 
-#question-1 {
-}
-
-#question-1 {
-}
-
-#question-1 {
-}
-
-#question-1 {
-}
-
-#question-1 {
-}
-
-#question-1 {
-}
-
-#question-1 {
-}
-
-#question-1 {
-}
-
-#question-1 {
-}
-
-#question-1 {
-}
-
-#question-1 {
-}
-
-#question-1 {
+a {
+  color: #766257;
+  text-decoration: underline;
 }
 
 /* div - what html to be styled - {} group declarations for a selector */
