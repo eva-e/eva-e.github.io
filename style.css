@@ -35,6 +35,10 @@ h1 {
 h2 {
   color: rgb(150, 235, 150);
   font-weight: 600;
+  margin-left: 30%;
+  text-align: left;
+  font-family: "Poppins";
+  text-align: justify;
 }
 
 h3 {
@@ -58,18 +62,10 @@ p {
   max-width: 800px;
   margin-top: 10px;
   margin-left: 19%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* class has dot . */
-/* for h2 */
-.pink-color {
-  color: rgb(255, 162, 198);
-}
-/* for link li */
-.hotpink-color {
-  color: rgb(255, 32, 125);
-}
 
 /* QUESTION LINKS TOP OF PAGE */
 .reference-links {
@@ -80,8 +76,21 @@ p {
 }
 
 a {
-  color: #766257;
+  color: #635041;
   text-decoration: underline;
+}
+
+.website-url {
+  margin-left: 40%;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 500;
+  border: 1px solid #ff91b5;
+  background: #ff91b5;
+  border-radius: 20px;
+  width: 250px;
+  height: 30px;
+  padding: 8px;
 }
 
 /* div - what html to be styled - {} group declarations for a selector */
