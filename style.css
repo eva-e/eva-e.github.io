@@ -10,12 +10,31 @@ body {
 }
 
 #banner {
-  padding: 30px;
+  padding: 32px;
   background: #766257;
 }
 
+footer {
+  padding: 12px;
+  background: #766257;
+}
+
+footer p {
+  margin-left: 2%;
+  color: #fff1e6;
+  text-align: left;
+}
+
 li {
-  color: rgb(148, 122, 105);
+  color: #766257;
+  font-weight: 400;
+  font-family: "Poppins";
+  padding: 5px;
+  font-size: 15px;
+  max-width: 600px;
+  margin-top: 10px;
+  margin-left: 27%;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -45,9 +64,10 @@ h1 {
 
 h2 {
   color: #ff91b5;
-  font-weight: 600;
+  font-weight: 700;
   margin-left: 27%;
   text-align: left;
+  margin-top: 10px;
   font-family: "Poppins";
   text-align: justify;
 }
@@ -93,16 +113,16 @@ a {
 
 /* portfolio website link */
 .website-url {
-  margin-left: 39%;
-  text-align: center;
+  margin-left: 27%;
+  text-align: left;
   font-family: "Poppins";
   font-weight: 600;
   border: 1px solid #ff91b5;
   background: #ff91b5;
   border-radius: 20px;
-  width: 230px;
+  width: 180px;
   height: 25px;
-  padding: 6px;
+  padding: 12px;
 }
 
 .website-url a {
