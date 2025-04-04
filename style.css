@@ -1,9 +1,15 @@
 @import url();
-* {
-  color: rgb(150, 235, 150);
+
+/* for styling an id use #*/
+#firstname {
+  background-color: yellow;
 }
+
+/* * {
+  color: rgb(150, 235, 150);
+} */
 body {
-  background-color: rgb(255, 243, 227);
+  background-color: #fff1e6;
 }
 
 li {
@@ -11,8 +17,9 @@ li {
 }
 
 h1 {
-  color: rgb(255, 132, 167);
-  font-weight: 800;
+  color: #766257;
+  font-weight: 700;
+  font-family: "Poppins";
 }
 
 h2 {
@@ -26,7 +33,8 @@ h3 {
 
 p {
   color: rgb(148, 122, 105);
-  font-weight: 100;
+  font-weight: 300;
+  font-family: "Poppins";
 }
 
 /* class has dot . */
@@ -42,6 +50,45 @@ p {
 /* for second p */
 #second-para {
   color: rgb(87, 71, 51);
+}
+/* QUESTION LINKS TOP OF PAGE */
+#question-1 {
+}
+
+#question-1 {
+}
+
+#question-1 {
+}
+
+#question-1 {
+}
+
+#question-1 {
+}
+
+#question-1 {
+}
+
+#question-1 {
+}
+
+#question-1 {
+}
+
+#question-1 {
+}
+
+#question-1 {
+}
+
+#question-1 {
+}
+
+#question-1 {
+}
+
+#question-1 {
 }
 
 /* div - what html to be styled - {} group declarations for a selector */
