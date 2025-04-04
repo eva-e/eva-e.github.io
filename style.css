@@ -1,10 +1,5 @@
 @import url();
 
-/* for styling an id use #*/
-#firstname {
-  background-color: yellow;
-}
-
 /* * {
   color: rgb(150, 235, 150);
 } */
@@ -14,7 +9,7 @@ body {
   min-height: 100vh;
 }
 
-.banner {
+#banner {
   padding: 30px;
   background: #766257;
 }
@@ -24,7 +19,7 @@ li {
 }
 
 h1 {
-  margin-left: 30%;
+  margin-left: 27%;
   text-align: left;
   color: #766257;
   font-weight: 700;
@@ -32,10 +27,26 @@ h1 {
   text-align: justify;
 }
 
+.img {
+  margin-left: 50%;
+  display: block;
+  margin: auto;
+  width: 30px;
+}
+
+.img-arrow {
+  margin-left: 26%;
+  width: 27px;
+  border: 2px solid #ffffff;
+  background: #8cfa9e;
+  border-radius: 30px;
+  padding: 8px;
+}
+
 h2 {
-  color: rgb(150, 235, 150);
+  color: #ff91b5;
   font-weight: 600;
-  margin-left: 30%;
+  margin-left: 27%;
   text-align: left;
   font-family: "Poppins";
   text-align: justify;
@@ -44,24 +55,24 @@ h2 {
 h3 {
   font-family: "Poppins";
   text-align: left;
-  color: rgb(150, 235, 150);
+  color: #766257;
   padding: 20px;
-  font-size: 15px;
-  max-width: 800px;
+  font-size: 25px;
+  max-width: 600px;
   margin-top: 10px;
-  margin-left: 19%;
+  margin-left: 25%;
   margin-bottom: 20px;
 }
 
 p {
-  color: rgb(87, 71, 51);
-  font-weight: 300;
+  color: #766257;
+  font-weight: 400;
   font-family: "Poppins";
   padding: 20px;
   font-size: 15px;
-  max-width: 800px;
+  max-width: 600px;
   margin-top: 10px;
-  margin-left: 19%;
+  margin-left: 25%;
   margin-bottom: 10px;
 }
 
@@ -71,8 +82,8 @@ p {
 .reference-links {
   text-align: center;
   font-family: "Poppins";
-  font-weight: 300;
-  word-spacing: 35px;
+  font-weight: 800;
+  word-spacing: 39px;
 }
 
 a {
@@ -80,17 +91,23 @@ a {
   text-decoration: underline;
 }
 
+/* portfolio website link */
 .website-url {
-  margin-left: 40%;
+  margin-left: 39%;
   text-align: center;
   font-family: "Poppins";
-  font-weight: 500;
+  font-weight: 600;
   border: 1px solid #ff91b5;
   background: #ff91b5;
   border-radius: 20px;
-  width: 250px;
-  height: 30px;
-  padding: 8px;
+  width: 230px;
+  height: 25px;
+  padding: 6px;
+}
+
+.website-url a {
+  color: #fff1e6;
+  text-decoration: none;
 }
 
 /* div - what html to be styled - {} group declarations for a selector */
