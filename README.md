@@ -11,5 +11,9 @@
 ## Author 
 <p align="left">🌸 Evanthia (Eva) Evgenidis</p>
 
+## Author Declaration
+<p align="left"> Assignment 1: I have not used any AI tools or technologies to prepare this assessment.</p>
+
+
 ## Attributions
 <p align="left"> Copyright © Eva Evgenidis | 2025 | All rights reserved <span id="datee"></span> </p>
