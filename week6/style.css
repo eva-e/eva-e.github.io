@@ -1,0 +1,13 @@
+img {
+  display: block;
+  cursor: pointer;
+}
+
+button {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.round {
+  border-radius: 50%;
+}

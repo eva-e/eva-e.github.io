@@ -1,9 +1,34 @@
-const header = document.querySelector("header");
-console.log(header);
-console.log(header.innerHTML);
+const myButton = document.querySelector("#my-button");
+console.log(myButton);
+
+myButton.addEventListener("click", handleClick);
 let course = "OART1013";
-header.innerHTML += `<h1> this is ${course} </h1>`;
-console.log(header.innerHTML);
+
+const myCat = document.querySelector("#my-cat");
+console.log(myCat);
+
+myCat.addEventListener("mouseenter", addMe);
+myCat.addEventListener("mouseleave", removeMe);
+
+function addMe() {
+  myCat.classList.add("round");
+}
+
+function removeMe() {
+  myCat.classList.remove("round");
+}
+
+function handleClick() {
+  console.log("did you just click me");
+  myCat.classList.toggle("round");
+  // header.innerHTML += `<h1> this is ${course} </h1>`;
+}
+
+// const header = document.querySelector("header");
+// console.log(header);
+// console.log(header.innerHTML);
+// header.innerHTML += `<h1> this is ${course} </h1>`;
+// console.log(header.innerHTML);
 // innerHTML shows everything that is inside the header including the html code
 // += adds to existing content
 
