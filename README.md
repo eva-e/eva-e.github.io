@@ -9,6 +9,7 @@
 <p align="left">https://eva-e.github.io/week4</p>
 <p align="left">https://eva-e.github.io/week4/flex</p>
 <p align="left">https://eva-e.github.io/week4/grid</p>
+<p align="left">https://eva-e.github.io/week6</p>
 <p align="left">https://eva-e.github.io/week6/blogposts</p>
 
 ## Author 
