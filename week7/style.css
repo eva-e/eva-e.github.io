@@ -1,3 +1,7 @@
+:root {
+  --bg-color: #ff91b5;
+}
+
 body {
   background: white;
 }
@@ -17,7 +21,7 @@ button {
   padding: 20px;
   font-size: 1.1rem;
   background-color: #8cfa9e;
-  border-color: #ff91b5;
+  border-color: var(--bg-color);
   border-width: 10px;
   border-radius: 30px;
   margin-right: 10px;
