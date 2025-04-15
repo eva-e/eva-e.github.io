@@ -6,6 +6,7 @@ let myNewHeading = "audio is currently playing";
 const airportAudio = document.querySelector("#airport-audio");
 console.log(airportAudio);
 
+// playing sound
 const playButton = document.querySelector("#play-button");
 console.log(playButton);
 
@@ -22,11 +23,11 @@ function playAudio() {
 const pauseButton = document.querySelector("#pause-button");
 console.log(pauseButton);
 
-playButton.addEventListener("click", pauseAudio);
+pauseButton.addEventListener("click", pauseAudio);
 
 function pauseAudio() {
   myNewHeading = "Audio is currently paused";
-  airportAudio.play();
+  airportAudio.pause();
   topHeading.textContent = myNewHeading;
 }
 

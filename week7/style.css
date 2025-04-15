@@ -2,9 +2,15 @@ body {
   background: white;
 }
 
-audio {
+audio,
+video {
   display: block;
   margin-bottom: 20px;
+}
+
+video {
+  width: 300px;
+  height: 300px;
 }
 
 button {
