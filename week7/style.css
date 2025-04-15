@@ -1,0 +1,20 @@
+audio {
+  display: block;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.1rem;
+  background-color: #8cfa9e;
+  border-color: #ff91b5;
+  border-width: 10px;
+  border-radius: 30px;
+  margin-right: 10px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 0.9;
+}
