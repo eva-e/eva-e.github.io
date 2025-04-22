@@ -21,9 +21,9 @@
 <p align="left">Browser-based Interactive Project: Create a prototype interaction tailored for web browsers centered around a context of your preference and using one of the specified actions: Scroll, Hover, Navigate, Drag, or Click. The main emphasis here is on crafting a fundamental interaction, rather than developing an entire project or website. Your chosen context can range from an experimental art piece, a game, to a commercial website, influencing the design decisions made in your prototype.</p>
 
 ## Weekly Class Coding Lessons
-- [Week3](https://eva-e.github.io/week3)
-- [Week4](https://eva-e.github.io/week4)
-- [Week4 Flex](https://eva-e.github.io/week4/flex)
+- [Week 3](https://eva-e.github.io/week3)
+- [Week 4](https://eva-e.github.io/week4)
+- [Week 4 Flex](https://eva-e.github.io/week4/flex)
 - [Week 4 Grid](https://eva-e.github.io/week4/grid)
 - [Week 6 Blog Posts](https://eva-e.github.io/week6)
 - [Week 6 DOM/Cat](https://eva-e.github.io/week6/cat)
