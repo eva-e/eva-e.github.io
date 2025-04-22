@@ -12,7 +12,7 @@
 
 <p align="left">Browser-based Interactive Experiments: Demonstrate your expertise as a full-stack UX lead. For this assignment, your primary responsibility is to revamp the website's design and customize the existing media player code based on one of the specified contexts below.</p>
 
-<p align="left"><strong>I have chosen Music for relaxation/study</strong></p>
+<p align="left"><strong>I have chosen Music for relaxation/study.</strong></p>
 
 - [Assignment 2](https://eva-e.github.io/assignment2)
 
