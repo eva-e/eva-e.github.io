@@ -6,13 +6,13 @@
 
 <p align="left">Interactive Experience Research Project: Research an interactive web project and provide short responses to the questions. Your responses need to be collated and presented as a web page by writing them into a single HTML document using semantically appropriate elements with a linked CSS file to provide contextually appropriate styling.</p>
 
-- [Assignment 1] (https://eva-e.github.io)
+- [Assignment 1](https://eva-e.github.io)
 
 ## Assignment 2  ~
 
 <p align="left">Browser-based Interactive Experiments: Demonstrate your expertise as a full-stack UX lead. For this assignment, your primary responsibility is to revamp the website's design and customize the existing media player code based on one of the specified contexts below.</p>
 
-<p align="left"> Assignment 2 Link: <strong>https://eva-e.github.io/assignment2</strong></p>
+- [Assignment 2](https://eva-e.github.io/assignment2)
 
 ## Assignment 3  ~ 
 
