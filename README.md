@@ -6,7 +6,8 @@
 
 <p align="left">Interactive Experience Research Project: Research an interactive web project and provide short responses to the questions. Your responses need to be collated and presented as a web page by writing them into a single HTML document using semantically appropriate elements with a linked CSS file to provide contextually appropriate styling.</p>
 
-- [Assignment 1](https://eva-e.github.io)
+- [Assignment 1](https://eva-e.github.io/assignment1)
+- Previously Assignment 1 was eva-e.github.io, now eva-e.github.io/assignment1.
 
 ## Assignment 2  ~
 
