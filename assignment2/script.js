@@ -5,8 +5,8 @@ console.log(topHeading);
 
 let myNewHeading = "audio is currently playing";
 
-const airportAudio = document.querySelector("#airport-audio");
-console.log(airportAudio);
+const dangoAudio = document.querySelector("#dango-audio");
+console.log(dangoAudio);
 
 // playing sound
 const playButton = document.querySelector("#play-button");
@@ -16,7 +16,7 @@ playButton.addEventListener("click", playAudio);
 
 function playAudio() {
   myNewHeading = "Audio is currently playing";
-  airportAudio.play();
+  dangoAudio.play();
   topHeading.textContent = myNewHeading;
 }
 
