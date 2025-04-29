@@ -20,6 +20,55 @@ function playAudio() {
   topHeading.textContent = myNewHeading;
 }
 
+// PLAYLIST LOGIC - USEFUL FOR ASSIGNMENT 2-
+// website feature change between lightmode and darkmode, prompt the user to use darkmode lightmode or warm mode
+const playlist = [
+  { id: 1, src: "stardust.mp4" },
+  { id: 2, src: "zenscape.mp4" },
+  {
+    id: 3,
+    src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4",
+    name: "Music Video",
+  },
+];
+
+// stardust
+// playlist logic
+const stardustButton = document.querySelector("#stardust-vid-button");
+console.log(stardustButton);
+
+// listen to click button
+stardustButton.addEventListener("click", function chooseStardust() {
+  chooseVideo(0);
+});
+
+// zenscape
+// playlist logic
+const zenscapeButton = document.querySelector("#zenscape-vid-button");
+console.log(zenscapeButton);
+
+// listen to click button
+zenscapeButton.addEventListener("click", function chooseZenscape() {
+  chooseVideo(1);
+});
+
+// music video
+// playlist logic
+const musicVidButton = document.querySelector("#musicvideo-vid-button");
+console.log(musicVidButton);
+
+// listen to click button
+musicVidButton.addEventListener("click", function chooseMusicVideo() {
+  chooseVideo(2);
+});
+
+function chooseVideo(no) {
+  myVideo.src = playlist[no].src;
+  console.log(myVideo.src);
+  myVideo.load();
+  myVideo.play();
+}
+
 // const video = document.querySelector("#custom-video-player");
 // const playPauseBtn = document.querySelector("#play-pause-btn");
 // const playPauseImg = document.querySelector("#play-pause-img");
