@@ -3,13 +3,27 @@
 const myVideo = document.querySelector("#my-video");
 console.log(myVideo);
 
+myVideo.addEventListener("timeupdate", updateProgressBar);
+
+// fetch progress bar
+const progressBar = document.querySelector("#progress-bar");
+console.log(progressBar);
+
+// logic of how many seconds into the video, the current time
+function updateProgressBar() {
+  let progress = (myVideo.currentTime / myVideo.duration) * 100;
+  console.log(progress);
+  progressBar.style.width = progress + "%";
+}
+// --------------------------------------------------------------------------
+
 // play/pause button
 // Fetch the play/pause button
 
 const playPauseButton = document.querySelector("#play-pause-button");
 console.log(playPauseButton);
 
-playPauseButton = addEventListener("click", togglePlay);
+playPauseButton.addEventListener("click", togglePlay);
 
 const playPauseImg = document.querySelector("#play-pause-img");
 console.log(playPauseImg);
@@ -24,167 +38,148 @@ function togglePlay() {
   }
 }
 
+// --------------------------------------------------------------------------
+
 // mute/unmute logic
 // Fetch the mute/unmute button
 
 const muteUnmuteButton = document.querySelector("#mute-unmute-button");
 console.log(muteUnmuteButton);
 
-muteUnmuteButton = addEventListener("click", toggleAudio);
+muteUnmuteButton.addEventListener("click", toggleAudio);
 
 const muteUnmuteImg = document.querySelector("#mute-unmute-img");
 console.log(muteUnmuteImg);
 
-function togglePlay() {
-  if (myVideo.paused || myVideo.ended) {
-    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v2.png";
-    myVideo.play();
+function toggleAudio() {
+  // if the video does not have sound that means muted == true, then unmute the video
+  if (myVideo.muted) {
+    muteUnmuteImg.src =
+      "https://img.icons8.com/ios-glyphs/30/high-volume--v2.png";
+    myVideo.muted = false;
+    // if the video has sound then mute the video
   } else {
-    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v2.png";
-    myVideo.pause();
+    muteUnmuteImg.src = "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png";
+    myVideo.muted = true;
   }
 }
 
-// const videoList = [
-//   { id: 1, src: "stardust.mp4" },
-//   { id: 2, src: "zenscape.mp4" },
-//   {
-//     id: 3,
-//     src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4",
-//   },
-// ];
+// --------------------------------------------------------------------------
 
-// const myVideo = document.querySelector("#my-video");
-// console.log(myVideo);
+// fast forward logic
+// Fetch the fast forward button
 
-// const progressBar = document.querySelector("#progress-bar");
-// console.log(progressBar);
+const fastForwardButton = document.querySelector("#fast-forward-button");
+console.log(fastForwardButton);
 
-// myVideo.addEventListener("timeupdate", updateProgress);
+// listen to click on that button
+fastForwardButton.addEventListener("click", fastForward);
 
-// function updateProgress() {
-//   const duration = (myVideo.currentTime / myVideo.duration) * 100;
-//   progressBar.style.width = duration + "%";
-// }
+function fastForward() {
+  if (myVideo.playbackRate == 1.0) {
+    myVideo.playbackRate = 2.0;
+  } else {
+    myVideo.playbackRate = 1.0;
+  }
+}
+//  -------------------------------------------------------------------------
 
-// const playPauseButton = document.querySelector("#play-pause-button");
-// console.log(playPauseButton);
+// step one button
+// Fetch the step one button
 
-// playPauseButton.addEventListener("click", togglePlayback);
+const step1Button = document.querySelector("#step1-button");
+console.log(step1Button);
 
-// const playPauseImg = document.querySelector("#play-pause-img");
-// console.log(playPauseImg);
+// listen to click on that button
+step1Button.addEventListener("click", gotoStep1);
 
-// function togglePlayback() {
-//   if (myVideo.paused || myVideo.ended) {
-//     myVideo.play();
-//     playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v2.png";
-//   } else {
-//     myVideo.pause();
-//     playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v2.png";
-//   }
-// }
+function gotoStep1() {
+  myVideo.currentTime = 43.54;
+}
 
-// const muteUnmuteButton = document.querySelector("#mute-unmute-button");
-// console.log(muteUnmuteButton);
+//  -------------------------------------------------------------------------
+// fullscreen logic
+// fetch fullscreen button
+const fullscreenButton = document.querySelector("#fullscreen-button");
+console.log(fullscreenButton);
 
-// muteUnmuteButton.addEventListener("click", toggleAudio);
+// listen to click on that button
+fullscreenButton.addEventListener("click", goFullscreen);
 
-// const muteUnmuteImg = document.querySelector("#mute-unmute-img");
-// console.log(muteUnmuteImg);
+function goFullscreen() {
+  if (!document.fullscreenElement) {
+    myVideo.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+}
 
-// function toggleAudio() {
-//   if (myVideo.muted) {
-//     myVideo.muted = false;
-//     muteUnmuteImg.src =
-//       "https://img.icons8.com/ios-glyphs/30/high-volume--v2.png";
-//   } else {
-//     myVideo.muted = true;
-//     muteUnmuteImg.src = "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png";
-//   }
-// }
+//  -------------------------------------------------------------------------
+// like button
 
-// const stardustButton = document.querySelector("#stardust-vid-button");
-// console.log(stardustButton);
+const heartButton = document.querySelector("#heart-button");
+console.log(heartButton);
 
-// stardustButton.addEventListener("click", function chooseVideo() {
-//   playVideo(0);
-// });
+// listen to click button
+heartButton.addEventListener("click", updateLikes);
 
-// const zenscapeButton = document.querySelector("#zenscape-vid-button");
-// console.log(zenscapeButton);
+let likes = 0;
+const likesContainer = document.querySelector("#likes");
+function updateLikes() {
+  likes++;
+  likesContainer.textContent = likes;
+}
+// -------------------------------------------------------------------------
 
-// zenscapeButton.addEventListener("click", function chooseVideo() {
-//   playVideo(1);
-// });
+// PLAYLIST LOGIC - USEFUL FOR ASSIGNMENT 2
+const playlist = [
+  { id: 1, src: "stardust.mp4" },
+  { id: 2, src: "zenscape.mp4" },
+  {
+    id: 3,
+    src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4",
+    name: "Music Video",
+  },
+];
 
-// const musicVideoButton = document.querySelector("#musicvideo-vid-button");
-// console.log(musicVideoButton);
+// stardust
+// playlist logic
+const stardustButton = document.querySelector("#stardust-vid-button");
+console.log(stardustButton);
 
-// musicVideoButton.addEventListener("click", function chooseVideo() {
-//   playVideo(2);
-// });
+// listen to click button
+stardustButton.addEventListener("click", function chooseStardust() {
+  chooseVideo(0);
+});
 
-// function playVideo(no) {
-//   myVideo.src = videoList[no].src;
-//   console.log(myVideo.src);
-//   myVideo.load();
-//   myVideo.play();
-// }
+// zenscape
+// playlist logic
+const zenscapeButton = document.querySelector("#zenscape-vid-button");
+console.log(zenscapeButton);
 
-// const fullscreenButton = document.querySelector("#fullscreen-button");
-// console.log(fullscreenButton);
+// listen to click button
+zenscapeButton.addEventListener("click", function chooseZenscape() {
+  chooseVideo(1);
+});
 
-// fullscreenButton.addEventListener("click", toggleFullscreen);
+// music video
+// playlist logic
+const musicVidButton = document.querySelector("#musicvideo-vid-button");
+console.log(musicVidButton);
 
-// function toggleFullscreen() {
-//   if (!document.fullscreenElement) {
-//     myVideo.requestFullscreen();
-//   } else {
-//     document.exitFullscreen();
-//   }
-// }
+// listen to click button
+musicVidButton.addEventListener("click", function chooseMusicVideo() {
+  chooseVideo(2);
+});
 
-// const heartButton = document.querySelector("#heart-button");
-// console.log(heartButton);
-
-// heartButton.addEventListener("click", updateLikes);
-
-// const likesContainer = document.querySelector("#likes");
-// let likes = 0;
-
-// function updateLikes() {
-//   likes++;
-//   likesContainer.textContent = likes;
-// }
-
-// const step1Button = document.querySelector("#step1-button");
-// console.log(step1Button);
-
-// step1Button.addEventListener("click", gotoStep1);
-
-// function gotoStep1() {
-//   myVideo.currentTime = 16.0;
-// }
-
-// const step2Button = document.querySelector("#step2-button");
-// console.log(step2Button);
-
-// step2Button.addEventListener("click", gotoStep2);
-
-// function gotoStep2() {
-//   myVideo.currentTime = 43.0;
-// }
-
-// const fastForwardButton = document.querySelector("#fast-forward-button");
-// console.log(fastForwardButton);
-
-// fastForwardButton.addEventListener("click", fastForward);
-
-// function fastForward() {
-//   if (myVideo.playbackRate === 1.0) {
-//     myVideo.playbackRate = 2.0;
-//   } else {
-//     myVideo.playbackRate = 1.0;
-//   }
-// }
+function chooseVideo(no) {
+  myVideo.src = playlist[no].src;
+  console.log(myVideo.src);
+  myVideo.load();
+  myVideo.play();
+}
+// = assigning value
+//  == comparing values
+// compare value and type
+// myVideo.muted === true => myVideo.muted
+// myVideo.muted === false => !myVideo.muted
