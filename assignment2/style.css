@@ -3,14 +3,59 @@ tones of green, pink and cream.
 Vivid and striking colours are not suitable */
 /* Colours: B6EBAC DBF1C8 FFF7E4 FED3D7 FDAFC9 */
 
+/* Style the video: 100% width and height to cover the entire window */
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#my-video1 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#play-pause-button1 {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#play-pause-button1:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* body {
   background-color: #ffede1;
 }
 
 h1,
 h2 {
   color: black;
-}
+} */
 
 /* 
 h2 {
