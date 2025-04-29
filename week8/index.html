@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- <h1>My awesomest media player!!!</h1> -->
+    </header>
+    <main class="double-border">
+      <div class="main-screen">
+        <video src="stardust.mp4" id="my-video"></video>
+      </div>
+      <div class="playlist">
+        <button class="double-border" id="stardust-vid-button">Stardust</button>
+        <button class="double-border" id="zenscape-vid-button">Zenscape</button>
+        <button class="double-border" id="musicvideo-vid-button">
+          Music Video
+        </button>
+      </div>
+      <div class="controls">
+        <button id="play-pause-button" class="double-border">
+          <img
+            src="https://img.icons8.com/ios-glyphs/30/play--v2.png"
+            alt=""
+            id="play-pause-img"
+          />
+        </button>
+        <button id="mute-unmute-button" class="double-border">
+          <img
+            src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+            alt=""
+            id="mute-unmute-img"
+          />
+        </button>
+        <button id="fast-forward-button" class="double-border">
+          <img
+            src="https://img.icons8.com/ios-glyphs/30/fast-forward.png"
+            alt=""
+            id="fast-forward-img"
+          />
+        </button>
+        <button id="step1-button" class="double-border">1</button>
+        <button id="step2-button" class="double-border">2</button>
+        <div id="progress-bar-container"><span id="progress-bar"></span></div>
+        <button id="fullscreen-button" class="double-border">
+          <img
+            src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
+            alt=""
+            id="fullscreen-img"
+          />
+        </button>
+        <button id="heart-button" class="double-border">
+          <img
+            src="https://img.icons8.com/?size=36&id=DFU1kReSUccu&format=png&color=000000"
+            alt=""
+            id="fullscreen-img"
+          />
+        </button>
+        <div id="likes"></div>
+      </div>
+    </main>
+    <footer>Icons by <a href="https://icons8.com/">Icons8</a></footer>
+  </body>
+</html>
