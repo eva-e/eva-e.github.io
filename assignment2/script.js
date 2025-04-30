@@ -34,11 +34,16 @@ function updateProgressBar() {
 }
 
 const firstVideoButton = document.querySelector("#first-video-btn");
-
 // Event listener to play the first video
 firstVideoButton.addEventListener("click", function playIt() {
-  myVideo.pause();
+  video.pause();
   playVideo(0);
+});
+
+const secondVideoButton = document.querySelector("#second-video-btn");
+secondVideoButton.addEventListener("click", function playIt() {
+  myVideo.pause();
+  playVideo(1);
 });
 
 function playVideo(no) {

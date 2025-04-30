@@ -37,12 +37,12 @@ body {
   background-color: transparent;
   position: relative;
   bottom: 0;
-  /* color: #f1f1f1; */
   padding: 20px;
 }
 
 h1 {
   font-family: "MyFont";
+  margin-top: 25px;
   margin-left: 20px;
   font-size: 20px;
   padding: 10px;
@@ -55,6 +55,31 @@ h2 {
   font-size: 15px;
   padding: 10px;
   color: #fff;
+}
+
+.video-list {
+  font-family: "MyFont";
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  position: relative;
+  flex: 1;
+  right: 0;
+}
+
+.video-list button {
+  margin-left: 30px;
+  font-size: 10px;
+  padding: 10px;
+  color: #fff;
+  border: solid;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.video-list button:hover {
+  background: #8cfa9e;
+  color: rgb(255, 255, 255);
 }
 
 .video-title h3 {
@@ -83,14 +108,6 @@ h2 {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-}
-
-.video-list {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  /* width: 200px; */
-  flex: 1;
 }
 
 /* Add some content at the bottom of the video/page */
