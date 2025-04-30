@@ -4,14 +4,53 @@ Vivid and striking colours are not suitable */
 /* Colours: B6EBAC DBF1C8 FFF7E4 FED3D7 FDAFC9 */
 
 /* Style the video: 100% width and height to cover the entire window */
+@font-face {
+  font-family: "MyFont";
+  src: url("Minecraft.otf") format("opentype");
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: "Minecraft.otf";
   font-size: 17px;
+}
+/* code for the controls of the site, play/pause, progress bar */
+.custom-controls {
+  position: fixed;
+  bottom: 0;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.title-heading {
+  background-color: transparent;
+  font-family: "MyFont";
+  margin-left: 20px;
+  position: relative;
+  bottom: 0;
+  /* color: #f1f1f1; */
+  padding: 20px;
+}
+
+/* Play/pause button */
+.custom-controls button {
+  background-color: transparent;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 
 #my-video1 {
@@ -23,17 +62,25 @@ body {
 }
 
 /* Add some content at the bottom of the video/page */
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
+
+.progress-bar {
+  width: 30%;
+  height: 10px;
+  background-color: #ddd;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: #fdafc9;
+  width: 0;
+  transition: width 0.3s ease;
 }
 
 /* Style the button used to pause/play the video */
-#play-pause-button1 {
+h1 {
   width: 200px;
   font-size: 18px;
   padding: 10px;
@@ -41,11 +88,6 @@ body {
   background: #000;
   color: #fff;
   cursor: pointer;
-}
-
-#play-pause-button1:hover {
-  background: #ddd;
-  color: black;
 }
 
 /* body {
