@@ -1,4 +1,15 @@
+// We create an object array containing the videos
+const videoList = [
+  {
+    name: "Sweet Honeycomb",
+    link: "https://www.dropbox.com/scl/fi/y1kzx9likpeut4c04bhyr/Sweet-Honeycomb-Minecraft-Scenery.mp4?rlkey=0cmohbsgp6o1m7pfwsc86lrhq&st=1t9tm6ki&dl=1",
+  },
+];
+
+let loop = false;
+
 // VIDEO PLAYER
+const videoName = document.querySelector("#video-name");
 const video = document.querySelector("#my-video1");
 const playPauseBtn = document.querySelector("#play-pause-button1");
 const playPauseImg = document.querySelector("#play-pause-img");
@@ -20,6 +31,22 @@ function togglePlayPause() {
 function updateProgressBar() {
   const value = (video.currentTime / video.duration) * 100;
   progressBar.style.width = value + "%";
+}
+
+const firstVideoButton = document.querySelector("#first-video-btn");
+
+// Event listener to play the first video
+firstVideoButton.addEventListener("click", function playIt() {
+  myVideo.pause();
+  playVideo(0);
+});
+
+function playVideo(no) {
+  video.pause();
+  video.src = videoList[no].link;
+  videoName.textContent = videoList[no].name;
+  video.load();
+  video.play();
 }
 
 // VIDEO BACKGROUND FROM W3SCHOOLS

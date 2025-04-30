@@ -16,10 +16,31 @@
         type="video/mp4"
       />
     </video>
+    <section class="video-list">
+      <!-- We use buttons, whenever user clicks on them, the correspoding 
+      video will be played  -->
+      <button id="first-video-btn">
+        <img
+          id="first-video-img"
+          src="https://www.dropbox.com/scl/fi/y1kzx9likpeut4c04bhyr/Sweet-Honeycomb-Minecraft-Scenery.mp4?rlkey=0cmohbsgp6o1m7pfwsc86lrhq&st=1t9tm6ki&dl=1"
+          alt="Sweet Honeycomb"
+        />
+      </button>
+      <button id="second-video-btn">
+        <img id="second-video-img" src="stardust.png" alt="stardust" />
+      </button>
+    </section>
+
+    <section class="video-title">
+      <!-- in this section, we display the name of the video and current playtime -->
+      <h3>Now Playing: <span id="video-name"></span></h3>
+    </section>
+
     <div class="title-heading">
-      <h1>Melowdy Meadow</h1>
-      <h2></h2>
+      <h1>Welcome to Melowdy Meadow</h1>
+      <h2>Press play to start listening!</h2>
     </div>
+
     <div class="custom-controls">
       <button id="play-pause-button1" onclick="togglePlayPause()">
         <img

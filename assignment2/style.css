@@ -6,7 +6,7 @@ Vivid and striking colours are not suitable */
 /* Style the video: 100% width and height to cover the entire window */
 @font-face {
   font-family: "MyFont";
-  src: url("Minecraft.otf") format("opentype");
+  src: url("fonts/Minecraft.otf") format("opentype");
 }
 
 * {
@@ -49,6 +49,23 @@ h1 {
   color: #fff;
 }
 
+h2 {
+  font-family: "MyFont";
+  margin-left: 20px;
+  font-size: 15px;
+  padding: 10px;
+  color: #fff;
+}
+
+.video-title h3 {
+  font-family: "MyFont";
+  margin-left: 20px;
+  font-size: 15px;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
 /* Play/pause button */
 .custom-controls button {
   background-color: transparent;
@@ -68,18 +85,25 @@ h1 {
   min-height: 100%;
 }
 
+.video-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  /* width: 200px; */
+  flex: 1;
+}
+
 /* Add some content at the bottom of the video/page */
 
 .progress-bar {
   width: 30%;
   height: 10px;
   background-color: #ddd;
-  margin-top: 10px;
+  margin-top: 4px;
   overflow: hidden;
 }
 
 .progress-bar span {
-  margin-top: 40px;
   display: block;
   height: 100%;
   background-color: #fdafc9;
