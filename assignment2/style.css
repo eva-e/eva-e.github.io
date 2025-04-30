@@ -1,4 +1,4 @@
-/* Colour palette resembles a cosy and peaceful study space for users, 
+/* Colour palette is cosy and peaceful, soft pastel colours are used to , 
 tones of green, pink and cream. 
 Vivid and striking colours are not suitable */
 /* Colours: B6EBAC DBF1C8 FFF7E4 FED3D7 FDAFC9 */
@@ -14,6 +14,7 @@ Vivid and striking colours are not suitable */
 }
 
 body {
+  background-color: transparent;
   margin: 0;
   font-family: "Minecraft.otf";
   font-size: 17px;
@@ -34,12 +35,18 @@ body {
 
 .title-heading {
   background-color: transparent;
-  font-family: "MyFont";
-  margin-left: 20px;
   position: relative;
   bottom: 0;
   /* color: #f1f1f1; */
   padding: 20px;
+}
+
+h1 {
+  font-family: "MyFont";
+  margin-left: 20px;
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
 }
 
 /* Play/pause button */
@@ -72,6 +79,7 @@ body {
 }
 
 .progress-bar span {
+  margin-top: 40px;
   display: block;
   height: 100%;
   background-color: #fdafc9;
@@ -80,15 +88,6 @@ body {
 }
 
 /* Style the button used to pause/play the video */
-h1 {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
 
 /* body {
   background-color: #ffede1;
