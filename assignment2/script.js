@@ -17,6 +17,7 @@ let loop = false;
 
 // VIDEO PLAYER + PLAYLIST
 const videoName = document.querySelector("#video-name");
+const videoTime = document.querySelector("#video-time");
 const video = document.querySelector("#my-video1");
 const playPauseBtn = document.querySelector("#play-pause-button1");
 const playPauseImg = document.querySelector("#play-pause-img");
@@ -35,9 +36,17 @@ function togglePlayPause() {
       "https://img.icons8.com/fluency-systems-filled/48/fdafc9/play.png";
   }
 }
+// https://stackoverflow.com/questions/72764258/vanilla-js-how-would-i-display-a-video-currenttime-value-in-a-minutesseconds
+// I used Stackoverflow for the code from lines 44 to 48, I then resolved the issue of the minutes not displaying on the page by altering their code.
+// Here there is an equation using time = video.CurrentTime into timeString which displays minutes and seconds,
+// I figured that videoTime.textContent would have to equal timeString for the minutes:seconds to be displayed on the page.
 function updateProgressBar() {
-  const value = (video.currentTime / video.duration) * 100;
-  progressBar.style.width = value + "%";
+  const time = video.currentTime;
+  const minutes = Math.floor(time / 60);
+  const seconds = Math.floor(time - minutes * 60);
+  const timeString = `${minutes}:${seconds}`;
+  videoTime.textContent = timeString;
+  progressBar.style.width = timeString + "%";
 }
 
 const firstVideoButton = document.querySelector("#first-video-btn");

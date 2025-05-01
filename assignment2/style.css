@@ -9,6 +9,11 @@ Vivid and striking colours are not suitable */
   src: url("fonts/Minecraft.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "MyFont2";
+  src: url("fonts/Minecraft-Bold.otf") format("opentype");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -29,7 +34,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-top: 10px;
+  margin-top: 9cm;
   width: 100%;
 }
 
@@ -52,13 +57,13 @@ h1 {
 h2 {
   font-family: "MyFont";
   margin-left: 20px;
-  font-size: 17px;
+  font-size: 13px;
   padding: 10px;
   color: #fff;
 }
 
 .video-list {
-  font-family: "MyFont";
+  font-family: "MyFont2";
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -92,6 +97,19 @@ h2 {
   bottom: 0;
 }
 
+/* minutes:seconds */
+.video-title h4 {
+  position: fixed;
+  font-family: "MyFont";
+  margin-bottom: 18px;
+  margin-left: 1.6cm;
+  font-size: 15px;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  bottom: 0;
+}
+
 /* Play/pause button */
 .custom-controls button {
   background-color: transparent;
@@ -117,8 +135,9 @@ h2 {
   width: 30%;
   height: 10px;
   background-color: #ddd;
-  margin-top: 4px;
+  margin-top: 5px;
   overflow: hidden;
+  margin-left: 1cm;
 }
 
 .progress-bar span {
