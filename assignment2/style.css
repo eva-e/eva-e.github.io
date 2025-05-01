@@ -34,7 +34,6 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-top: 9cm;
   width: 100%;
 }
 
@@ -71,12 +70,12 @@ h2 {
 }
 
 .video-list button {
+  background: #fdafc989;
   margin-left: 50px;
   font-size: 12px;
   padding: 10px;
   color: #fff;
   border: solid;
-  background-color: transparent;
   cursor: pointer;
 }
 
@@ -101,7 +100,7 @@ h2 {
 .video-title h4 {
   position: fixed;
   font-family: "MyFont";
-  margin-bottom: 18px;
+  margin-bottom: 19px;
   margin-left: 1.6cm;
   font-size: 15px;
   padding: 10px;
@@ -133,11 +132,11 @@ h2 {
 
 .progress-bar {
   width: 30%;
-  height: 10px;
+  height: 9px;
   background-color: #ddd;
-  margin-top: 5px;
+  margin-top: 3px;
   overflow: hidden;
-  margin-left: 1cm;
+  margin-left: 1.3cm;
 }
 
 .progress-bar span {

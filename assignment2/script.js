@@ -46,7 +46,7 @@ function updateProgressBar() {
   const seconds = Math.floor(time - minutes * 60);
   const timeString = `${minutes}:${seconds}`;
   videoTime.textContent = timeString;
-  progressBar.style.width = timeString + "%";
+  progressBar.style.width = time + "%";
 }
 
 const firstVideoButton = document.querySelector("#first-video-btn");
