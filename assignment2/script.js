@@ -1,14 +1,21 @@
-// We create an object array containing the videos
+// Here is an object array containing the videos. The videos are identified by an id number which the playVideo function() fetches on click
 const videoList = [
   {
+    id: 1,
     name: "Sweet Honeycomb",
-    link: "https://www.dropbox.com/scl/fi/y1kzx9likpeut4c04bhyr/Sweet-Honeycomb-Minecraft-Scenery.mp4?rlkey=0cmohbsgp6o1m7pfwsc86lrhq&st=1t9tm6ki&dl=1",
+    link: "https://www.dropbox.com/scl/fi/6v1t8itd9ykikn5uqd9e1/Sweet-Honeycomb-Video.mp4?rlkey=qv3sbspycilu3mj6j2w87qks3&st=ysmfny3x&dl=1",
+  },
+
+  {
+    id: 2,
+    name: "Serene Cherry",
+    link: "https://www.dropbox.com/scl/fi/edw62c2bq4rmypn8xpm4m/Serene-Cherry-Video.mp4?rlkey=9402mo2hh2tprme5dtkcxf5lz&st=p8abpkja&dl=1",
   },
 ];
 
 let loop = false;
 
-// VIDEO PLAYER
+// VIDEO PLAYER + PLAYLIST
 const videoName = document.querySelector("#video-name");
 const video = document.querySelector("#my-video1");
 const playPauseBtn = document.querySelector("#play-pause-button1");
@@ -42,7 +49,7 @@ firstVideoButton.addEventListener("click", function playIt() {
 
 const secondVideoButton = document.querySelector("#second-video-btn");
 secondVideoButton.addEventListener("click", function playIt() {
-  myVideo.pause();
+  video.pause();
   playVideo(1);
 });
 
@@ -91,49 +98,49 @@ function playVideo(no) {
 // }
 
 // PLAYLIST LOGIC - USEFUL FOR ASSIGNMENT 2
-const playlist = [
-  { id: 1, src: "stardust.mp4" },
-  { id: 2, src: "zenscape.mp4" },
-  {
-    id: 3,
-    src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4",
-    name: "Music Video",
-  },
-];
+// const playlist = [
+//   { id: 1, src: "stardust.mp4" },
+//   { id: 2, src: "zenscape.mp4" },
+//   {
+//     id: 3,
+//     src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4",
+//     name: "Music Video",
+//   },
+// ];
 
-// stardust
-// playlist logic
-const stardustButton = document.querySelector("#stardust-vid-button");
-console.log(stardustButton);
+// // stardust
+// // playlist logic
+// const stardustButton = document.querySelector("#stardust-vid-button");
+// console.log(stardustButton);
 
-// listen to click button
-stardustButton.addEventListener("click", function chooseStardust() {
-  chooseVideo(0);
-});
+// // listen to click button
+// stardustButton.addEventListener("click", function chooseStardust() {
+//   chooseVideo(0);
+// });
 
-// zenscape
-// playlist logic
-const zenscapeButton = document.querySelector("#zenscape-vid-button");
-console.log(zenscapeButton);
+// // zenscape
+// // playlist logic
+// const zenscapeButton = document.querySelector("#zenscape-vid-button");
+// console.log(zenscapeButton);
 
-// listen to click button
-zenscapeButton.addEventListener("click", function chooseZenscape() {
-  chooseVideo(1);
-});
+// // listen to click button
+// zenscapeButton.addEventListener("click", function chooseZenscape() {
+//   chooseVideo(1);
+// });
 
-// music video
-// playlist logic
-const musicVidButton = document.querySelector("#musicvideo-vid-button");
-console.log(musicVidButton);
+// // music video
+// // playlist logic
+// const musicVidButton = document.querySelector("#musicvideo-vid-button");
+// console.log(musicVidButton);
 
-// listen to click button
-musicVidButton.addEventListener("click", function chooseMusicVideo() {
-  chooseVideo(2);
-});
-
-function chooseVideo(no) {
-  myVideo.src = playlist[no].src;
-  console.log(myVideo.src);
-  myVideo.load();
-  myVideo.play();
-}
+// // listen to click button
+// musicVidButton.addEventListener("click", function chooseMusicVideo() {
+//   chooseVideo(2);
+// });
+// //
+// function chooseVideo(no) {
+//   video.src = playlist[no].src;
+//   console.log(video.src);
+//   video.load();
+//   video.play();
+// }
