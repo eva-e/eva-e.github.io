@@ -44,7 +44,7 @@ h1 {
   font-family: "MyFont";
   margin-top: 25px;
   margin-left: 20px;
-  font-size: 30px;
+  font-size: 26px;
   padding: 10px;
   color: #fff;
 }
@@ -52,7 +52,7 @@ h1 {
 h2 {
   font-family: "MyFont";
   margin-left: 20px;
-  font-size: 15px;
+  font-size: 17px;
   padding: 10px;
   color: #fff;
 }
@@ -61,15 +61,13 @@ h2 {
   font-family: "MyFont";
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
-  position: relative;
+  position: absolute;
   flex: 1;
-  right: 0;
 }
 
 .video-list button {
-  margin-left: 30px;
-  font-size: 10px;
+  margin-left: 50px;
+  font-size: 12px;
   padding: 10px;
   color: #fff;
   border: solid;
