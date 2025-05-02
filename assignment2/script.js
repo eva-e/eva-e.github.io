@@ -13,7 +13,7 @@ const videoList = [
   },
 ];
 
-let loop = false;
+let loop = true;
 
 // VIDEO PLAYER + PLAYLIST
 const videoName = document.querySelector("#video-name");
@@ -25,6 +25,7 @@ const progressBar = document.querySelector("#progress-bar-fill");
 video.removeAttribute("controls");
 // playPauseBtn.addEventListener("click", togglePlayPause);
 video.addEventListener("timeupdate", updateProgressBar);
+
 function togglePlayPause() {
   if (video.paused || video.ended) {
     video.play();
@@ -51,14 +52,37 @@ function updateProgressBar() {
 }
 
 const firstVideoButton = document.querySelector("#first-video-btn");
+// When the first video button is clicked the play/pause button changes to pause button to indicate the video is playing
+// It took a lot of trial and error to work out how to implement the function.
+// I was trying to use the togglePlayPause function however I only needed the if statement, as I already had a function playIt.
 // Event listener to play the first video
 firstVideoButton.addEventListener("click", function playIt() {
+  if (video.paused || video.ended) {
+    video.play();
+    playPauseImg.src =
+      "https://img.icons8.com/ios-glyphs/30/fdafc9/pause--v1.png";
+  }
   video.pause();
   playVideo(0);
 });
 
+// This did not work as I was adding another function unnecessarily
+// function togglePlayPause() {
+//   if (video.paused || video.ended) {
+//     video.play();
+//     playPauseImg.src =
+//       "https://img.icons8.com/ios-glyphs/30/fdafc9/pause--v1.png";
+//   }
+// }
+
+// Event listener to play the first video
 const secondVideoButton = document.querySelector("#second-video-btn");
 secondVideoButton.addEventListener("click", function playIt() {
+  if (video.paused || video.ended) {
+    video.play();
+    playPauseImg.src =
+      "https://img.icons8.com/ios-glyphs/30/fdafc9/pause--v1.png";
+  }
   video.pause();
   playVideo(1);
 });
