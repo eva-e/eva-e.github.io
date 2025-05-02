@@ -58,11 +58,12 @@ function updateProgressBar() {
   progressBar.style.width = value + "%";
 }
 
-const firstVideoButton = document.querySelector("#first-video-btn");
 // When the first video button is clicked the play/pause button changes to pause button to indicate the video is playing
 // It took a lot of trial and error to work out how to implement the function.
 // I was trying to use the togglePlayPause function however I only needed the if statement, as I already had a function playIt.
 // Event listener to play the first video
+
+const firstVideoButton = document.querySelector("#first-video-btn");
 firstVideoButton.addEventListener("click", function playIt() {
   if (video.paused || video.ended) {
     video.play();
