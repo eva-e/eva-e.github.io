@@ -11,6 +11,12 @@ const videoList = [
     name: "Serene Cherry",
     link: "https://www.dropbox.com/scl/fi/edw62c2bq4rmypn8xpm4m/Serene-Cherry-Video.mp4?rlkey=9402mo2hh2tprme5dtkcxf5lz&st=p8abpkja&dl=1",
   },
+
+  {
+    id: 3,
+    name: "Morning Dew",
+    link: "https://www.dropbox.com/scl/fi/9vm4rxhbz5m9d1jinec4q/Morning-Dew.mp4?rlkey=6xl7rtrh97muh9tcv8620y9gm&st=dvv64akh&dl=1",
+  },
 ];
 
 let loop = true;
@@ -58,7 +64,6 @@ const firstVideoButton = document.querySelector("#first-video-btn");
 // I was trying to use the togglePlayPause function however I only needed the if statement, as I already had a function playIt.
 // Event listener to play the first video
 firstVideoButton.addEventListener("click", function playIt() {
-  video.loop = true;
   if (video.paused || video.ended) {
     video.play();
     playPauseImg.src =
@@ -87,6 +92,18 @@ secondVideoButton.addEventListener("click", function playIt() {
   }
   video.pause();
   playVideo(1);
+});
+
+// Event listener to play the third video
+const thirdVideoButton = document.querySelector("#morning-dew");
+thirdVideoButton.addEventListener("click", function playIt() {
+  if (video.paused || video.ended) {
+    video.play();
+    playPauseImg.src =
+      "https://img.icons8.com/ios-glyphs/30/fdafc9/pause--v1.png";
+  }
+  video.pause();
+  playVideo(2);
 });
 
 function playVideo(no) {

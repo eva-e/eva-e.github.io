@@ -9,29 +9,44 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <!-- Plan: 
+ Make two sections, Nature Sounds (Relaxation) and (Study) Lofi Music
+ Playlist could be labels such as rain, snow, choice between nature sounds and
+  -->
+    <!-- IDEAS:
+The background video has been created by myself. 
+ This is from a world I created a few months ago, 
+ an offline survival world on Minecraft Java Edition, 
+ in which I sought out to find a Cherry Grove. 
+ I utilised this Cherry Grove for the background of my music for relaxation/study media player,
+ as it encapsulates a peaceful and gentle atmosphere for users. 
+ -->
+    <!-- I was initially thinking of a website feature change between lightmode and darkmode, prompt the user to use darkmode lightmode or warm mode -->
+    <!-- My feature will be a minutes:seconds display -->
     <!-- The video -->
     <!-- HOMEPAGE IMAGE SCREENSHOT -->
     <!-- My videos include original gameplay footage and sounds from Minecraft by Mojang Studios, 
       recorded during live play. Used under Mojang’s video policy.-->
-    <video id="my-video1">
-      <source
-        src="https://www.dropbox.com/scl/fi/6v1t8itd9ykikn5uqd9e1/Sweet-Honeycomb-Video.mp4?rlkey=qv3sbspycilu3mj6j2w87qks3&st=ysmfny3x&dl=1"
-        type="video/mp4"
-      />
-    </video>
+    <img id="my-img1" src="homepage.png" alt="Homepage Image" />
 
     <div class="title-heading">
       <h1>Welcome to Melowdy Meadow</h1>
+      <h2>
+        Whether you're studying or relaxing, these mellow melodies are here for
+        you!
+      </h2>
       <h2>Press one of the music options to start listening!</h2>
     </div>
 
     <section class="video-list">
-      <a href="morningdew.html" class="page-link">Morning Dew</a>
+      <a href="morningdew.html" id="morning-dew" class="page-link"
+        >Morning Dew</a
+      >
       <!-- Corresponding video will be played when user clicks a button, for changing between music-->
       <a href="mellowscenery.html" class="page-link">Mellow Scenery</a>
     </section>
 
-    <div class="custom-controls">
+    <!-- <div class="custom-controls">
       <button id="play-pause-button1" onclick="togglePlayPause()">
         <img
           id="play-pause-img"
@@ -40,18 +55,19 @@
           width="24"
           height="24"
         />
-      </button>
+      </button> -->
 
-      <!-- add the missing buttons or functionality here -->
-      <div class="progress-bar">
+    <!-- add the missing buttons or functionality here -->
+    <!-- <div class="progress-bar">
         <span id="progress-bar-fill"></span>
       </div>
     </div>
-    <div class="video-title">
-      <!-- in this section, we display the name of the video and current playtime -->
-      <h3>Now Playing: <span id="video-name"></span></h3>
+    <div class="video-title"> -->
+    <!-- in this section, we display the name of the video and current playtime -->
+    <!-- <h3>Now Playing: <span id="video-name"></span></h3>
       <h4><span id="video-time"></span></h4>
-    </div>
+    </div> -->
+
     <!-- Other way to code a play/pause button -->
     <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fullscreen_video -->
     <!-- <div class="content"> -->
@@ -81,5 +97,11 @@
       controls
       id="dango-audio"
     ></audio> -->
+    <footer>
+      <h1>
+        Icons by Icons8 | Font by https://github.com/IdreesInc | My videos
+        include original gameplay recordings
+      </h1>
+    </footer>
   </body>
 </html>

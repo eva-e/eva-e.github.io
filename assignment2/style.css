@@ -152,6 +152,14 @@ h2 {
   min-height: 100%;
 }
 
+#my-img1 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 /* Add some content at the bottom of the video/page */
 
 .progress-bar {
@@ -171,6 +179,19 @@ h2 {
   transition: width 0.3s ease;
 }
 
+footer {
+  width: 20px;
+  padding: 2px;
+  text-align: center;
+  width: 98%;
+  position: relative;
+  margin-top: 11.4cm;
+}
+
+footer h1 {
+  font-size: 0.8rem;
+  color: white;
+}
 /* Style the button used to pause/play the video */
 
 /* body {
