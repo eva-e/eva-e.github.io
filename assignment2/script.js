@@ -18,6 +18,9 @@ const videoList = [
     link: "https://www.dropbox.com/scl/fi/9vm4rxhbz5m9d1jinec4q/Morning-Dew.mp4?rlkey=6xl7rtrh97muh9tcv8620y9gm&st=dvv64akh&dl=1",
   },
 ];
+// Music References
+// https://pixabay.com/music/modern-classical-relaxing-piano-for-sleeping-312507/
+// https://pixabay.com/music/modern-classical-golden-sunset-piano-music-200136/
 
 let loop = true;
 
