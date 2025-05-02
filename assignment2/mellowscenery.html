@@ -10,6 +10,9 @@
   </head>
   <body>
     <!-- The video -->
+    <!-- SCREENSHOT FOR HOMEPAGE showing flowers and blossom trees-->
+    <!-- When the morning dew button is clicked it will play the rain video -->
+    <!-- When music scenery is clicked will take to new page which has two options -->
     <video id="my-video1">
       <source
         src="https://www.dropbox.com/scl/fi/6v1t8itd9ykikn5uqd9e1/Sweet-Honeycomb-Video.mp4?rlkey=qv3sbspycilu3mj6j2w87qks3&st=ysmfny3x&dl=1"
@@ -18,12 +21,17 @@
     </video>
 
     <div class="title-heading">
-      <h1>Welcome to Melowdy Meadow</h1>
-      <h2>Press one of the music scenery options to start listening!</h2>
+      <h1>Welcome to Mellow Scenery</h1>
+      <h2>Press one of the music options to start listening!</h2>
     </div>
 
     <section class="video-list">
+      <!-- https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link -->
       <!-- Corresponding video will be played when user clicks a button, for changing between music-->
+      <!-- I couldn't work out why the link appeared with an underline, 
+      it is not suitable to put the a href link in a button as it overlaps I noticed two borders-->
+      <!-- button tags for this page are not suitable for links  -->
+      <a href="index.html" class="page-link">Home</a>
       <button id="first-video-btn">Sweet Honeycomb</button>
       <button id="second-video-btn">Serene Cherry</button>
     </section>

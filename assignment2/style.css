@@ -19,7 +19,6 @@ Vivid and striking colours are not suitable */
 }
 
 body {
-  background-color: transparent;
   margin: 0;
   font-family: "Minecraft.otf";
   font-size: 17px;
@@ -70,7 +69,7 @@ h2 {
 }
 
 .video-list button {
-  background: #fdafc989;
+  background-color: #ff91b6ce;
   margin-left: 50px;
   font-size: 12px;
   padding: 10px;
@@ -79,8 +78,33 @@ h2 {
   cursor: pointer;
 }
 
+.page-link {
+  background-color: #ff91b6ce;
+  margin-left: 50px;
+  font-size: 12px;
+  padding: 10px;
+  color: #fff;
+  border: solid;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.page-link:hover {
+  background-color: #8cfa9e;
+  color: rgb(255, 255, 255);
+}
+
+/* .video-list a {
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  border: solid;
+  cursor: pointer;
+  text-decoration: none;
+} */
+
 .video-list button:hover {
-  background: #8cfa9e;
+  background-color: #8cfa9e;
   color: rgb(255, 255, 255);
 }
 
