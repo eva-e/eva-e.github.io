@@ -46,7 +46,7 @@ function togglePlayPause() {
       "https://img.icons8.com/fluency-systems-filled/48/fdafc9/play.png";
   }
 }
-// First new Feature: Displaying Minutes and Seconds.
+// First new Feature: Displaying Minutes and Seconds. Precise playtime displayed for users.
 // https://stackoverflow.com/questions/72764258/vanilla-js-how-would-i-display-a-video-currenttime-value-in-a-minutesseconds
 // I used Stackoverflow for the code from lines 44 to 48, I then resolved the issue of the minutes not displaying on the page by altering their code.
 // Here there is an equation using time = video.CurrentTime into timeString which displays minutes and seconds,
@@ -65,7 +65,6 @@ function updateProgressBar() {
 // It took a lot of trial and error to work out how to implement the function.
 // I was trying to use the togglePlayPause function however I only needed the if statement, as I already had a function playIt.
 // Event listener to play the first video
-
 const firstVideoButton = document.querySelector("#first-video-btn");
 firstVideoButton.addEventListener("click", function playIt() {
   if (video.paused || video.ended) {
