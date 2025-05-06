@@ -29,6 +29,8 @@
 - [Week 6 Blog Posts](https://eva-e.github.io/week6)
 - [Week 6 DOM/Cat](https://eva-e.github.io/week6/cat)
 - [Week 7 Media Player](https://eva-e.github.io/week7)
+- [Week 8 Media Player](https://eva-e.github.io/week8)
+- [Week 9 CSS Animation](https://eva-e.github.io/week9)
 
 ## Author 
 <p align="left">🌸 Evanthia (Eva) Evgenidis</p>
