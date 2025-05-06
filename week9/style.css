@@ -155,3 +155,22 @@ input:hover {
     rotate: 360deg;
   }
 }
+
+#heart {
+  animation-name: beat;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes beat {
+  0% {
+    scale: 0.9;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 0.9;
+  }
+}
