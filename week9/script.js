@@ -1,18 +1,15 @@
-const drawerButton = document.querySelector("#drawer-button");
-const sideDrawer = document.querySelector("#side-drawer");
-console.log(sideDrawer);
-let isOpen = false;
-drawerButton.addEventListener("click", openDrawer);
+const myButton = document.querySelector("#my-button");
 
-function openDrawer() {
-  console.log("i am clicked");
-  if (!isOpen) {
-    // sideDrawer.style.transform = `translateX(200px)`;
-    sideDrawer.style.translate = "200px";
-    isOpen = true;
-  } else {
-    sideDrawer.style.translate = "-200px";
-    // sideDrawer.style.transform = `translateX(-200px)`;
-    isOpen = false;
+myButton.addEventListener("click", moveInput);
+
+const myInput = document.querySelector("#my-duck");
+let clicked = false;
+
+function moveInput() {
+  if (!clicked) {
+    myDuck.style.translate = "30px 40px";
+    clicked = true;
   }
+  myDuck.style.translate = "0px 0px";
+  clicked = false;
 }

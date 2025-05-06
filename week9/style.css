@@ -40,16 +40,101 @@ button {
   border-radius: 10px;
   border: none;
   background-color: #ff91b5;
-  transition: background-color 0.3s ease scale 1.3s ease;
+  transition: background-color 0.6s ease, scale 0.6s ease;
 }
 
 button:hover {
   background-color: #f5578c;
   scale: 0.9;
+  rotate: 30deg;
 }
 
 input {
   font-size: 1.4rem;
   padding: 10px 20px;
   border-radius: 10px;
+  border: 2px solid #8cfa9e;
+  transition: border-color 0.3s linear, translate 0.4s ease;
+  width: 4rem;
+}
+
+/* Demonstration of how the properties work */
+input:hover {
+  border-color: #ff91b5;
+  /* translate: -30px 40px; */
+}
+#duck {
+  transform: scale 0.6s ease;
+}
+
+#duck:hover {
+  scale: 0.9;
+}
+
+#duck-icon {
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+
+#duck-icon:hover {
+  fill: #f5578c;
+}
+
+.box {
+  background-color: #ff91b5;
+  animation-name: box-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border: 4px dashed #ffffff;
+}
+
+@keyframes box-animation {
+  0% {
+    background-color: #ff7878;
+  }
+  20% {
+    background-color: #ffb87a;
+  }
+  40% {
+    background-color: #fafa8c;
+  }
+  60% {
+    background-color: #8cfa9e;
+  }
+  80% {
+    background-color: #ff56e0;
+  }
+  100% {
+    background-color: #ff91b5;
+  }
+}
+
+/* @keyframes border-animation {
+} */
+
+@keyframes bounce {
+  0% {
+    translate: 0px 0px;
+  }
+  45% {
+    translate: 0px -30px;
+  }
+  70% {
+    translate: 0px -15px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+
+#my-duck {
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.spinner {
+  border: 3px solid #ff91b5;
 }
