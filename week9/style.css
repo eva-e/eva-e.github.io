@@ -137,4 +137,21 @@ input:hover {
 
 .spinner {
   border: 3px solid #ff91b5;
+  border-top-color: #8cfa9e;
+  width: 100px;
+  height: 100px;
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50%;
+}
+
+@keyframes loading {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }
