@@ -45,9 +45,9 @@ h2 {
 }
 
 h3 {
+  font-size: 1.1rem;
   margin-top: 1.6rem;
   margin-left: 2rem;
-  margin-bottom: 3em;
   margin-left: 9%;
   text-align: left;
   max-width: 634px;
@@ -56,4 +56,14 @@ h3 {
 }
 
 h4 {
+  font-size: 0.9rem;
+  margin-top: 1.6rem;
+  margin-left: 2rem;
+  margin-bottom: 3em;
+  margin-left: 9%;
+  text-align: left;
+  max-width: 634px;
+  font-weight: 400;
+  font-family: Poppins;
+  color: #ffa9c6;
 }
