@@ -10,12 +10,37 @@
 
 body {
   background-color: #fff4f0;
+  margin-left: 18%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 1.6rem;
+  margin-left: 9%;
+  text-align: left;
+  font-weight: 700;
+  font-family: Poppins;
+  color: #ff91b5;
+  background: #ffffff;
+  border-radius: 22px;
+  width: auto;
+  height: 21px;
+  padding: 12px;
+}
+
+a:hover {
+  background-color: #8cfa9e;
+  color: rgb(255, 255, 255);
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
+  margin-left: 9%;
+
   font-family: MyFont2;
   margin-top: 80px;
+  width: 600px;
   font-size: 1.2rem;
   color: #ff91b5;
 }
@@ -59,7 +84,6 @@ h4 {
   font-size: 0.9rem;
   margin-top: 1.6rem;
   margin-left: 2rem;
-  margin-bottom: 3em;
   margin-left: 9%;
   text-align: left;
   max-width: 634px;
