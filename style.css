@@ -1,16 +1,59 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("fonts/Minecraft.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MyFont2";
+  src: url("fonts/Minecraft-Bold.otf") format("opentype");
+}
+
+body {
+  background-color: #fff4f0;
+}
+
 h1 {
   text-align: center;
-  font-family: Poppins;
+  font-family: MyFont2;
   margin-top: 80px;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: #ff91b5;
 }
 
 h2 {
-  margin-top: 1.6rem;
-  margin-bottom: 3em;
-  text-align: center;
-  max-width: 634px;
-  font-family: Poppins;
+  font-size: 1.3rem;
+  margin-top: 3%;
+  margin-left: 9%;
+  margin-bottom: 20px;
+  text-align: left;
+  max-width: 200px;
+  white-space: nowrap;
+  font-family: MyFont2;
   color: #8cfa9e;
+}
+
+.my-name {
+  font-size: 1.3rem;
+  margin-top: 3%;
+  margin-left: 9%;
+  margin-bottom: 20px;
+  text-align: left;
+  max-width: auto;
+  white-space: nowrap;
+  font-family: MyFont;
+  color: #ff91b5;
+}
+
+h3 {
+  margin-top: 1.6rem;
+  margin-left: 2rem;
+  margin-bottom: 3em;
+  margin-left: 9%;
+  text-align: left;
+  max-width: 634px;
+  font-family: MyFont;
+  color: #ff91b5;
+}
+
+h4 {
 }
