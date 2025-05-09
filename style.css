@@ -13,6 +13,10 @@ body {
   margin-left: 18%;
 }
 
+.website-links {
+  margin-top: 5%;
+}
+
 a {
   text-decoration: none;
   font-size: 0.9rem;
@@ -27,6 +31,7 @@ a {
   width: auto;
   height: 21px;
   padding: 12px;
+  box-shadow: 0 0 8px #8cfa9e;
 }
 
 a:hover {
