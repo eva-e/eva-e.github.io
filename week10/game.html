@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="game.js" defer></script>
+  </head>
+  <body>
+    <div id="welcome-screen">
+      <h1>Gambit’s Queen!</h1>
+      <img src="cover.png" alt="cover" id="cover" />
+      <div class="info">
+        <p>
+          Three cards, one hidden queen.
+          <br />
+          Your mission? Drag the card you believe hides the queen into the drop
+          box. <br />
+          Then, click to reveal your fate.
+        </p>
+        <h2>Can you spot the queen, or will she slip away?</h2>
+        <p>
+          <a href="https://www.tekeye.uk/playing_cards/svg-playing-cards"
+            >Thank you Tek Eye for the card images</a
+          >
+        </p>
+      </div>
+      <button id="start-button">Start Game</button>
+    </div>
+    <div id="game-screen">
+      <header>
+        <h2 id="result-header">Find the queen!</h2>
+      </header>
+      <section>
+        <div class="deck"></div>
+        <div class="dropbox card-container"></div>
+      </section>
+      <footer>
+        <button id="reset-button">Reset game</button>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -56,6 +56,10 @@ button:hover {
 a {
   font-size: 0.7rem;
 }
+
+#welcome-screen {
+  background-color: #ffe0e7;
+}
 /* ------------------------------------------------- */
 
 #welcome-screen,
