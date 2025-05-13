@@ -1,0 +1,149 @@
+/* ------- Basic setup --------------*/
+body {
+  background-color: #1a120b;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #ff91b5;
+  /* color: #3c2a21; */
+  font-size: 1.1rem;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+button {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  border-radius: 12px;
+  border: none;
+  color: #213c22;
+  transition: scale 0.4s ease, background-color 0.4s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 0.9;
+  background-color: #8cfa9ead;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.623);
+  /* width: 400px; */
+  padding: 30px;
+}
+
+a {
+  font-size: 0.7rem;
+}
+/* ------------------------------------------------- */
+
+#welcome-screen,
+#game-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.info {
+  background-color: rgba(0, 0, 0, 0.623);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+section {
+  min-width: 98vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.deck {
+  display: flex;
+  gap: 20px;
+}
+
+.card-container {
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.dropbox {
+  border: 1px dashed #e5e5cb30;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.856);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  position: relative;
+  transition: rotate 0.8s ease;
+  transform-style: preserve-3d;
+  /* this is important the flip wont work without preserve-3d */
+}
+
+.card:hover {
+  scale: 0.98;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 180 degree flip, need axis to specify where the rotation will happen */
+.flip {
+  rotate: y 180deg;
+}
+
+#cover {
+  cursor: pointer;
+  transition: scale 0.4s ease;
+}
+
+#cover:hover {
+  scale: 1.1;
+}
