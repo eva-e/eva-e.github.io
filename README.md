@@ -34,6 +34,7 @@ https://eva-e.github.io/
 - [Week 8 Media Player](https://eva-e.github.io/week8)
 - [Week 9 CSS Animation](https://eva-e.github.io/week9)
 - [Week 10 Interactions](https://eva-e.github.io/week10)
+- [Week 10 Game](https://eva-e.github.io/week10/game.html)
 
 ## Author
 
