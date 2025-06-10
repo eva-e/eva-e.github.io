@@ -1,3 +1,7 @@
+body {
+  background-color: #fff8ee;
+}
+
 .plant-button {
   margin-left: 26%;
   width: 27px;
@@ -5,4 +9,12 @@
   background: #8cfa9e;
   border-radius: 30px;
   padding: 8px;
+}
+
+#logo {
+  margin-left: 36%;
+}
+
+nav {
+  padding-top: 27px;
 }

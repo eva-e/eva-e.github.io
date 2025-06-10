@@ -8,21 +8,21 @@ const myImg = document.getElementById("myImg");
 const myButton = document.getElementById("myButton");
 
 myButton.addEventListener("click", function () {
-  myImg.src = "plant-grown1.png";
+  myImg.src = "images/plant-grown1.png";
 });
 
 const myImg2 = document.getElementById("myImg2");
 const myButton2 = document.getElementById("myButton2");
 
 myButton.addEventListener("click", function () {
-  myImg2.src = "plant-grown2.png";
+  myImg2.src = "images/plant-grown2.png";
 });
 
 const myImg3 = document.getElementById("myImg2");
 const myButton3 = document.getElementById("myButton2");
 
 myButton.addEventListener("click", function () {
-  myImg2.src = "plant-grown3.png";
+  myImg2.src = "images/plant-grown3.png";
 });
 
 // const card = document.querySelector(".card");
