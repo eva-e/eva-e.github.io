@@ -12,7 +12,7 @@ body {
 }
 
 #logo {
-  margin-left: 36%;
+  margin-left: 35%;
 }
 
 nav {
@@ -29,4 +29,11 @@ nav {
 
 #myImg3 {
   width: 100px;
+}
+
+#plant-shop {
+  width: 600px;
+  margin-left: 26%;
+  border-radius: 10px;
+  border-color: #8cfa9e;
 }
