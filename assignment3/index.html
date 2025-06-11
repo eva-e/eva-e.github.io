@@ -11,17 +11,30 @@
   <body>
     <!-- Audio from Pixabay -->
     <!-- https://pixabay.com/music/smooth-jazz-bossa-nova-jazz-podcast-music-207165/ -->
-    <audio loop id="Any name">
+    <!-- Logo is an original design I made on Canva -->
+    <!-- Plant store and music button are original pixel art designs I digitally drew, on Pixil Art -->
+
+    <audio id="my-audio">
       <source
         src="https://www.dropbox.com/scl/fi/jacq38pk7e4xsoizoufto/bossa-nova-jazz-podcast-music-207165.mp3?rlkey=gda87j6g1x3j4dddvxgti4zb2&st=xo4l61fc&dl=1"
       />
     </audio>
+
     <nav>
-      <img id="logo" src="images/logo1.png" width="400" />
-      <img id=music-button" src="" alt="">
+      <img id="logo" src="images/logo1.png" width="350" />
+
+      <button id="play-pause-button" onclick="togglePlayPause()">
+        <img
+          id="play-pause-img"
+          src="images/musicoff.png"
+          alt="Play Button"
+          width="50"
+          height="50"
+        />
+      </button>
     </nav>
 
-    <img id="plant-shop" src="/assignment3/images/plant-shop.png" alt="" />
+    <img id="plant-shop" src="/assignment3/images/plantshop.png" alt="" />
     <!-- for plant-grown1 -->
     <img id="myImg" src="images/plant1.png" />
     <button id="myButton">Watering Can</button>

@@ -12,11 +12,20 @@ body {
 }
 
 #logo {
-  margin-left: 35%;
+  margin-left: 37%;
+  align-items: center;
+}
+
+#play-pause-button {
+  border: none;
+  background-color: transparent;
+  margin-left: 14%;
+  align-items: center;
 }
 
 nav {
   padding-top: 27px;
+  display: flex;
 }
 
 #myImg {
@@ -32,8 +41,8 @@ nav {
 }
 
 #plant-shop {
-  width: 600px;
-  margin-left: 26%;
+  width: 560px;
+  margin-left: 27%;
   border-radius: 10px;
   border-color: #8cfa9e;
 }
