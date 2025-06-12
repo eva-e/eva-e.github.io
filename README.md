@@ -22,6 +22,8 @@ https://eva-e.github.io/
 
 <p align="left">Browser-based Interactive Project: Create a prototype interaction tailored for web browsers centered around a context of your preference and using one of the specified actions: Scroll, Hover, Navigate, Drag, or Click. The main emphasis here is on crafting a fundamental interaction, rather than developing an entire project or website. Your chosen context can range from an experimental art piece, a game, to a commercial website, influencing the design decisions made in your prototype.</p>
 
+- [Assignment 3](https://eva-e.github.io/assignment3)
+
 ## Weekly Class Coding Lessons
 
 - [Week 3](https://eva-e.github.io/week3)
