@@ -23,23 +23,28 @@ function togglePlayPause() {
 // images will be named plant-grown1 and so on
 const myImg = document.getElementById("myImg");
 const myButton = document.getElementById("myButton");
-
 myButton.addEventListener("click", function () {
   myImg.src = "images/plant3.png";
 });
 
 const myImg2 = document.getElementById("myImg2");
-const myButton2 = document.getElementById("myButton2");
-
 myButton.addEventListener("click", function () {
   myImg2.src = "images/plant3.png";
 });
 
-const myImg3 = document.getElementById("myImg2");
-const myButton3 = document.getElementById("myButton2");
-
+const myImg3 = document.getElementById("myImg3");
 myButton.addEventListener("click", function () {
-  myImg2.src = "images/plant2.png";
+  myImg3.src = "images/plant2.png";
+});
+
+// SPLASH SCREEN RULES
+// https://www.youtube.com/watch?v=MOlaldp1Fv4 Tutorial Reference
+const splash = document.querySelector(".splash");
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  setTimeout(() => {
+    splash.classList.add("display-none");
+  }, 2000);
 });
 
 // DRAG DROP CARD
