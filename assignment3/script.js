@@ -4,9 +4,11 @@
 // Three buttons for the plant options and one button for the watering can.
 
 // Toggle Audio
+
 const music = document.querySelector("#my-audio");
 const playPauseImg = document.querySelector("#play-pause-img");
 const playPauseBtn = document.querySelector("#play-pause-btn");
+let loop = true;
 function togglePlayPause() {
   if (music.paused || music.ended) {
     music.play();
