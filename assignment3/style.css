@@ -22,7 +22,7 @@ body {
 }
 
 #logo {
-  margin-left: 37%;
+  margin-left: 38%;
   align-items: center;
 }
 
@@ -57,22 +57,54 @@ nav {
 } */
 /* removed border for a less overwhelming layout */
 
+/* PLANT ICONS + SHOP SCREEN */
 .container-game #plant-shop {
   position: relative;
   width: 560px;
-  margin-left: 27%;
+  margin-left: 28%;
   border-radius: 10px;
 }
+
 .container-game #myImg {
-  width: 100px;
+  width: 200px;
+  position: absolute;
+  top: 85%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .container-game #myImg2 {
-  width: 100px;
+  width: 200px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .container-game #myImg3 {
-  width: 100px;
+  width: 200px;
+  position: absolute;
+  top: 85%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 /* .container-game img {

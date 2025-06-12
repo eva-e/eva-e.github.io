@@ -24,21 +24,22 @@ function togglePlayPause() {
 const myImg = document.getElementById("myImg");
 const myButton = document.getElementById("myButton");
 myButton.addEventListener("click", function () {
-  myImg.src = "images/plant3.png";
+  myImg.src = "images/plant-grown1.png";
 });
 
 const myImg2 = document.getElementById("myImg2");
 myButton.addEventListener("click", function () {
-  myImg2.src = "images/plant3.png";
+  myImg2.src = "images/plant-grown2.png";
 });
 
 const myImg3 = document.getElementById("myImg3");
 myButton.addEventListener("click", function () {
-  myImg3.src = "images/plant2.png";
+  myImg3.src = "images/plant-grown3.png";
 });
 
 // SPLASH SCREEN RULES
-// https://www.youtube.com/watch?v=MOlaldp1Fv4 Tutorial Reference
+// https://www.youtube.com/watch?v=MOlaldp1Fv4 Tutorial Reference, I watched this tutorial to learn how to make a splash screen.
+// I customised it to my liking, in order to maintain my webpage style.
 const splash = document.querySelector(".splash");
 
 document.addEventListener("DOMContentLoaded", (e) => {
