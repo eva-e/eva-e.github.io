@@ -12,14 +12,14 @@ body {
   background-color: #fff8ee;
 }
 
-.plant-button {
+/* .plant-button {
   margin-left: 26%;
   width: 27px;
   border: 2px solid #ffffff;
   background: #8cfa9e;
   border-radius: 30px;
   padding: 8px;
-}
+} */
 
 #logo {
   margin-left: 38%;
@@ -38,25 +38,6 @@ nav {
   display: flex;
 }
 
-/* #myImg {
-  width: 100px;
-}
-
-#myImg2 {
-  width: 100px;
-}
-
-#myImg3 {
-  width: 100px;
-} */
-
-/* #plant-shop {
-  width: 560px;
-  margin-left: 27%;
-  border-radius: 10px;
-} */
-/* removed border for a less overwhelming layout */
-
 /* PLANT ICONS + SHOP SCREEN */
 .container-game #plant-shop {
   position: relative;
@@ -69,7 +50,7 @@ nav {
   width: 200px;
   position: absolute;
   top: 85%;
-  left: 46%;
+  left: 34%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: transparent;
@@ -83,7 +64,7 @@ nav {
   width: 200px;
   position: absolute;
   top: 85%;
-  left: 50%;
+  left: 44%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: transparent;
@@ -112,12 +93,12 @@ nav {
   height: auto;
 } */
 
-/* My watering can button, placed over game at the bottom of screen */
+/* My watering can button, placed over shop screen at the bottom of screen */
 .container-game #myButton {
-  width: 100px;
+  width: 150px;
   position: absolute;
   top: 85%;
-  left: 68%;
+  left: 67%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: transparent;
@@ -144,6 +125,7 @@ nav {
 
 .splash.display-none {
   position: fixed;
+  opacity: 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -154,7 +136,7 @@ nav {
   font-family: "MyFont2";
   text-align: center;
   line-height: 90vh;
-  transition: all 5s;
+  transition: all 0.5s;
 }
 
 @keyframes fadeIn {

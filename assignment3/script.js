@@ -3,8 +3,7 @@
 // The click action is for choosing a plant and watering the plant.
 // Three buttons for the plant options and one button for the watering can.
 
-// Toggle Audio
-
+// Toggle Audio/Music
 const music = document.querySelector("#my-audio");
 const playPauseImg = document.querySelector("#play-pause-img");
 const playPauseBtn = document.querySelector("#play-pause-btn");
@@ -45,29 +44,29 @@ const splash = document.querySelector(".splash");
 document.addEventListener("DOMContentLoaded", (e) => {
   setTimeout(() => {
     splash.classList.add("display-none");
-  }, 2000);
+  }, 5000);
 });
 
 // DRAG DROP CARD
-// const card = document.querySelector(".card");
-// console.log(card);
-// let draggedCard = null;
+const card = document.querySelector(".card");
+console.log(card);
+let draggedCard = null;
 
-// card.addEventListener("dragstart", function () {
-//   draggedCard = card;
-// });
-// const dropBox = document.querySelector(".dropbox");
-// dropBox.innerHTML = "";
+card.addEventListener("dragstart", function () {
+  draggedCard = card;
+});
+const dropBox = document.querySelector(".dropbox");
+dropBox.innerHTML = "";
 
-// dropBox.addEventListener("dragover", function (e) {
-//   e.preventDefault();
-// });
+dropBox.addEventListener("dragover", function (e) {
+  e.preventDefault();
+});
 
-// dropBox.addEventListener("drop", function () {
-//   const clone = draggedCard;
+dropBox.addEventListener("drop", function () {
+  const clone = draggedCard;
 
-//   dropBox.appendChild(clone);
-// });
+  dropBox.appendChild(clone);
+});
 
 // CODE NOTES
 // Music for Page Loop, Click anywhere on screen
