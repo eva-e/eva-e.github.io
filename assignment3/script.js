@@ -1,6 +1,6 @@
 // The js will have two actions, drag and click.
 // The drag action will be for dragging the plant to a designated area on the shelving.
-// The click action is for choosing a plant and watering the plant.
+// The click action is for watering the plant.
 // Three buttons for the plant options and one button for the watering can.
 
 // Toggle Audio/Music
@@ -38,13 +38,13 @@ myButton.addEventListener("click", function () {
 
 // SPLASH SCREEN RULES
 // https://www.youtube.com/watch?v=MOlaldp1Fv4 Tutorial Reference, I watched this tutorial to learn how to make a splash screen.
-// I customised it to my liking, in order to maintain my webpage style.
+// I customised it to my liking, in order to maintain my webpage style, 7 seconds showing.
 const splash = document.querySelector(".splash");
 
 document.addEventListener("DOMContentLoaded", (e) => {
   setTimeout(() => {
     splash.classList.add("display-none");
-  }, 6000);
+  }, 7000);
 });
 
 // DRAG DROP IMAGE Reference https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_draganddrop
