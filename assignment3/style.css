@@ -197,7 +197,7 @@ nav {
 
 /* ---------------- */
 
-.plant-name {
+/* .plant-name {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
@@ -224,4 +224,16 @@ nav {
 .plant-name:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+} */
+
+footer {
+  padding: 14px;
+  margin-left: 21%;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #ff91b5;
+  text-align: center;
+  font-family: "MyFont";
 }
