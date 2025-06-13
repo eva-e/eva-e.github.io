@@ -11,17 +11,40 @@
 body {
   background-color: #fff8ee;
 }
-
-.dropbox {
-  border: 2px dashed #e5e5cb7a;
-  cursor: pointer;
+/* Bottom row left */
+#div1 {
   width: 200px;
-  min-height: 200px;
+  height: 70px;
   padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  border: none;
+  position: absolute;
+  top: 43%;
+  margin-left: 28%;
+  border-radius: 10px;
+}
+
+/* Bottom row right */
+#div2 {
+  width: 200px;
+  height: 70px;
+  padding: 10px;
+  border: none;
+  position: absolute;
+  top: 42%;
+  margin-left: 50%;
+  border-radius: 10px;
+}
+
+/* Top row left */
+#div3 {
+  width: 200px;
+  height: 70px;
+  padding: 10px;
+  border: none;
+  position: absolute;
+  top: 22%;
+  margin-left: 32%;
+  border-radius: 10px;
 }
 
 /* .plant-button {
@@ -33,6 +56,7 @@ body {
   padding: 8px;
 } */
 
+/* Logo is inspired by spring, pink for flowers and the bee for nature, weBloom means blooming together */
 #logo {
   margin-left: 38%;
   align-items: center;
@@ -57,7 +81,7 @@ nav {
   margin-left: 28%;
   border-radius: 10px;
 }
-
+/* Plant Icon 1 */
 .container-game #myImg {
   width: 200px;
   position: absolute;
@@ -72,6 +96,7 @@ nav {
   border-radius: 5px;
 }
 
+/* Plant Icon 2 */
 .container-game #myImg2 {
   width: 200px;
   position: absolute;
@@ -86,6 +111,7 @@ nav {
   border-radius: 5px;
 }
 
+/* Plant Icon 3 */
 .container-game #myImg3 {
   width: 200px;
   position: absolute;

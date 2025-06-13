@@ -41,20 +41,54 @@
     </nav>
     <div class="container-game">
       <img id="plant-shop" src="/assignment3/images/plantshop.png" alt="" />
+      <div
+        id="div1"
+        ondrop="dropHandler(event)"
+        ondragover="dragoverHandler(event)"
+      ></div>
+
+      <div
+        id="div2"
+        ondrop="dropHandler(event)"
+        ondragover="dragoverHandler(event)"
+      ></div>
+
+      <div
+        id="div3"
+        ondrop="dropHandler(event)"
+        ondragover="dragoverHandler(event)"
+      ></div>
       <!-- for plant-grown1 -->
-      <img id="myImg" draggable="true" src="images/plant1.png" />
+      <img
+        id="myImg"
+        draggable="true"
+        ondragstart="dragstartHandler(event)"
+        src="images/plant1.png"
+      />
 
       <!-- for plant-grown2 -->
-      <img id="myImg2" draggable="true" src="images/plant2.png" />
+      <img
+        id="myImg2"
+        draggable="true"
+        ondragstart="dragstartHandler(event)"
+        src="images/plant2.png"
+      />
 
       <!-- for plant-grown3 -->
-      <img id="myImg3" draggable="true" src="images/plant3.png" />
+      <img
+        id="myImg3"
+        draggable="true"
+        ondragstart="dragstartHandler(event)"
+        src="images/plant3.png"
+      />
       <!-- for watering can to change all images to grown plants -->
       <button id="myButton">
         <img src="images/wateringcan.png" alt="" />
       </button>
-      <div class="dropbox"></div>
     </div>
+    <footer>
+      <p>Copyright © Eva Evgenidis | 2025 | All rights reserved</p>
+    </footer>
   </body>
 </html>
 

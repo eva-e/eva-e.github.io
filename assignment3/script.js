@@ -47,38 +47,52 @@ document.addEventListener("DOMContentLoaded", (e) => {
   }, 6000);
 });
 
-// DRAG DROP IMAGE
-let draggedElement = null;
-
-const plantImg1 = document.querySelector("#myImg");
-const plantImg2 = document.querySelector("#myImg2");
-const plantImg3 = document.querySelector("#myImg3");
-const dropBox = document.querySelector(".dropbox");
-
-plantImg1.addEventListener("dragstart", startDrag);
-plantImg2.addEventListener("dragstart", startDrag);
-plantImg3.addEventListener("dragstart", startDrag);
-
-function startDrag() {
-  draggedElement = plantImg1;
+// DRAG DROP IMAGE Reference https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_draganddrop
+function dragstartHandler(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
 }
 
-function startDrag() {
-  draggedElement = plantImg2;
+function dragoverHandler(ev) {
+  ev.preventDefault();
 }
 
-function startDrag() {
-  draggedElement = plantImg3;
+function dropHandler(ev) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
 }
 
-dropBox.addEventListener("dragover", endDrag);
+// let draggedElement = null;
 
-function endDrag(event) {
-  event.preventDefault();
-}
+// const plantImg1 = document.querySelector("#myImg");
+// const plantImg2 = document.querySelector("#myImg2");
+// const plantImg3 = document.querySelector("#myImg3");
+// const dropBox = document.querySelector(".dropbox");
 
-dropBox.addEventListener("drop", handleDrop);
-const clone = draggedElement;
+// plantImg1.addEventListener("dragstart", startDrag);
+// plantImg2.addEventListener("dragstart", startDrag);
+// plantImg3.addEventListener("dragstart", startDrag);
+
+// function startDrag() {
+//   draggedElement = plantImg1;
+// }
+
+// function startDrag() {
+//   draggedElement = plantImg2;
+// }
+
+// function startDrag() {
+//   draggedElement = plantImg3;
+// }
+
+// dropBox.addEventListener("dragover", endDrag);
+
+// function endDrag(event) {
+//   event.preventDefault();
+// }
+
+// dropBox.addEventListener("drop", handleDrop);
+// const clone = draggedElement.cloneNode(true);
 
 // CODE NOTES
 
