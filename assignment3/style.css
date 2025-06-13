@@ -47,6 +47,17 @@ body {
   border-radius: 10px;
 }
 
+#div4 {
+  width: 200px;
+  height: 70px;
+  padding: 10px;
+  border: none;
+  position: absolute;
+  top: 23%;
+  margin-left: 51%;
+  border-radius: 10px;
+}
+
 /* .plant-button {
   margin-left: 26%;
   width: 27px;
