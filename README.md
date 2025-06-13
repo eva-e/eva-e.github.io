@@ -44,7 +44,7 @@ https://eva-e.github.io/
 
 ## Author Declaration
 
-<p align="left"> Assignment 1: I have not used any AI tools or technologies to prepare this assessment.</p>
+<p align="left"> Assignment 1, 2 & 3: I have not used any AI tools or technologies to prepare these assessments.</p>
 
 ## Attributions
 
