@@ -44,49 +44,43 @@ const splash = document.querySelector(".splash");
 document.addEventListener("DOMContentLoaded", (e) => {
   setTimeout(() => {
     splash.classList.add("display-none");
-  }, 5000);
+  }, 6000);
 });
 
-// DRAG DROP CARD
-const card = document.querySelector(".card");
-console.log(card);
-let draggedCard = null;
+// DRAG DROP IMAGE
+let draggedElement = null;
 
-card.addEventListener("dragstart", function () {
-  draggedCard = card;
-});
+const plantImg1 = document.querySelector("#myImg");
+const plantImg2 = document.querySelector("#myImg2");
+const plantImg3 = document.querySelector("#myImg3");
 const dropBox = document.querySelector(".dropbox");
-dropBox.innerHTML = "";
 
-dropBox.addEventListener("dragover", function (e) {
-  e.preventDefault();
-});
+plantImg1.addEventListener("dragstart", startDrag);
+plantImg2.addEventListener("dragstart", startDrag);
+plantImg3.addEventListener("dragstart", startDrag);
 
-dropBox.addEventListener("drop", function () {
-  const clone = draggedCard;
+function startDrag() {
+  draggedElement = plantImg1;
+}
 
-  dropBox.appendChild(clone);
-});
+function startDrag() {
+  draggedElement = plantImg2;
+}
+
+function startDrag() {
+  draggedElement = plantImg3;
+}
+
+dropBox.addEventListener("dragover", endDrag);
+
+function endDrag(event) {
+  event.preventDefault();
+}
+
+dropBox.addEventListener("drop", handleDrop);
+const clone = draggedElement;
 
 // CODE NOTES
-// Music for Page Loop, Click anywhere on screen
-// window.addEventListener("click", function () {
-//   var audio = document.getElementById("Any name");
-//   audio.play();
-// });
-// const musicList = [
-//   {
-//     name: "Leafy Jazz",
-//     link: "https://www.dropbox.com/scl/fi/jacq38pk7e4xsoizoufto/bossa-nova-jazz-podcast-music-207165.mp3?rlkey=gda87j6g1x3j4dddvxgti4zb2&st=xo4l61fc&dl=1",
-//   },
-// ];
-// const muteUnmuteButton = document.querySelector("#mute-unmute-button");
-// // Event listener to mute or unmute audio on clicking the button
-// muteUnmuteButton.addEventListener("click", toggleAudio);
-// const muteUnmuteImg = document.querySelector("#mute-unmute-img");
-
-// // Event listener to check if the video is ended to replay it
-// myMusic.addEventListener("ended", replay);
 
 // // Play music
 // const firstMusicButton = document.querySelector("#music-button");

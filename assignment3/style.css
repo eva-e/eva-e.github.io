@@ -12,6 +12,18 @@ body {
   background-color: #fff8ee;
 }
 
+.dropbox {
+  border: 2px dashed #e5e5cb7a;
+  cursor: pointer;
+  width: 200px;
+  min-height: 200px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
 /* .plant-button {
   margin-left: 26%;
   width: 27px;
@@ -117,10 +129,17 @@ nav {
   background-color: #fff8ee;
   font-family: "MyFont2";
   font-size: 2rem;
-  z-index: 200;
+  z-index: 1000;
   color: #ff91b5;
   text-align: center;
   line-height: 90vh;
+}
+
+.splash p {
+  color: #ff91b5;
+  font-family: "MyFont2";
+  font-size: 2rem;
+  position: relative;
 }
 
 .splash.display-none {
@@ -148,4 +167,35 @@ nav {
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
+}
+
+/* ---------------- */
+
+.plant-name {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.plant-name .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  border: 3px solid black;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.plant-name:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }

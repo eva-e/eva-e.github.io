@@ -10,7 +10,10 @@
   </head>
   <body>
     <div class="splash">
-      <h1 class="fade-in">Welcome to weBloom, a mini plant nursery</h1>
+      <h1 class="fade-in">
+        Welcome to weBloom, a mini plant nursery. Water and Drag the plants onto
+        the shelf!
+      </h1>
     </div>
     <!-- Audio from Pixabay -->
     <!-- https://pixabay.com/music/smooth-jazz-bossa-nova-jazz-podcast-music-207165/ -->
@@ -39,15 +42,18 @@
     <div class="container-game">
       <img id="plant-shop" src="/assignment3/images/plantshop.png" alt="" />
       <!-- for plant-grown1 -->
-      <img id="myImg" src="images/plant1.png" />
+      <img id="myImg" draggable="true" src="images/plant1.png" />
 
       <!-- for plant-grown2 -->
-      <img id="myImg2" src="images/plant2.png" />
+      <img id="myImg2" draggable="true" src="images/plant2.png" />
 
       <!-- for plant-grown3 -->
-      <img id="myImg3" src="images/plant3.png" />
+      <img id="myImg3" draggable="true" src="images/plant3.png" />
       <!-- for watering can to change all images to grown plants -->
-      <button id="myButton"><img src="images/wateringcan.png" alt="" /></button>
+      <button id="myButton">
+        <img src="images/wateringcan.png" alt="" />
+      </button>
+      <div class="dropbox"></div>
     </div>
   </body>
 </html>
